@@ -1,50 +1,44 @@
 @charset "utf-8";
 
 @font-face {
-	font-family: 'PFL';
-	src: url('../fonts/pdfintextcondpro-light-webfont.eot');
-    src: url('../fonts/pdfintextcondpro-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/pdfintextcondpro-light-webfont.woff') format('woff'),
-         url('../fonts/pdfintextcondpro-light-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+	font-family:'SeroPro';
+	src: url('../fonts/SeroPro.eot');
+	src: url('../fonts/SeroPro.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/SeroPro.woff') format('woff'),
+		 url('../fonts/SeroPro.ttf') format('truetype'),
+		 url('../fonts/SeroPro.svg#SeroPro') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
 }
 
 @font-face {
-	font-family: 'PFR';
-	src: url('../fonts/pfdintextcondpro-regular-webfont.eot');
-    src: url('../fonts/pfdintextcondpro-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/pfdintextcondpro-regular-webfont.woff') format('woff'),
-         url('../fonts/pfdintextcondpro-regular-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+	font-family:'SeroPro-Bold';
+	src: url('../fonts/SeroPro-Bold.eot');
+	src: url('../fonts/SeroPro-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/SeroPro-Bold.woff') format('woff'),
+		 url('../fonts/SeroPro-Bold.ttf') format('truetype'),
+		 url('../fonts/SeroPro-Bold.svg#SeroPro-Bold') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
 }
-
-@font-face {
-	font-family: 'PFM';
-	src: url('../fonts/pfdintextcondpro-medium-webfont.eot');
-    src: url('../fonts/pfdintextcondpro-medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/pfdintextcondpro-medium-webfont.woff') format('woff'),
-         url('../fonts/pfdintextcondpro-medium-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 
 html,
 body {
 	position: relative;
 }
 body {
-	min-width: 1000px;
+	min-width: 1020px;
 	text-align: center;
-	font-family: 'PFL';
+	font-family: 'SeroPro';
 	overflow-x: hidden;
-	color: #472275;
+	color: #FFF;
+	background-color: #000;
 }
 a{
 	text-decoration: none;
-	color: #472275;
+	color: #FFF;
 }
 li{
 	list-style: none;
@@ -85,7 +79,7 @@ input.error,textarea.error{
 	overflow: visible !important;
 }
 .bold{
-	font-family: 'PFM';
+	font-family: 'SeroPro-Bold';
 }
 .underline{
 	text-decoration: underline;
@@ -98,14 +92,14 @@ input.error,textarea.error{
 }
 .b-block{
 	position: relative;
-	width: 1000px;
+	width: 980px;
 	margin: 0px auto;
 }
 .b-absolute{
 	position: absolute;
 	top: 0px;
 	left: 50%;
-	margin-left: -500px;
+	margin-left: -490px;
 }
 input::-webkit-input-placeholder {
 	color: #434343;
@@ -120,12 +114,515 @@ input:-moz-placeholder {
 		
 	}
 .b-1{
-	
+	height: 1035px;
+	background-position: 50% 50%;
+	background-size: cover;
+	background-image: url('../i/back-1.jpg');
 }
-	
+	.b-1 .b-block{
+
+	}
+		.b-1 .b-top{
+			padding-top: 50px;
+			text-align: left;
+		}
+			.b-1 .b-top .b-logo-cont{
+
+			}
+				.b-1 .b-top .b-logo-cont .b-burger-button{
+					background-position: 50% 50%;
+					background-repeat: no-repeat;
+					background-image: url('../i/burger.png');
+					width: 30px;
+					height: 30px;
+					display: inline-block;
+					margin-left: 10px;
+					margin-right: 44px;
+					margin-top: 18px;
+					opacity: 0.7;
+					-webkit-transition: all 100ms ease-out;
+					   -moz-transition: all 100ms ease-out;
+					    -ms-transition: all 100ms ease-out;
+					   	 -o-transition: all 100ms ease-out;
+							transition: all 100ms ease-out;
+				}
+					.b-1 .b-top .b-logo-cont .b-burger-button:hover{
+						opacity: 1;
+					}
+				.b-1 .b-top .b-logo-cont img{
+					margin-right: 40px;
+					width: 163px;
+				}
+				.b-1 .b-top .b-logo-cont .b-logo-text{
+					margin-top: 17px;
+					font-size: 12px;
+					line-height: 18px;
+				}
+			.b-1 .b-top .b-date-cont{
+				margin-top: 16px;
+			}
+				.b-1 .b-top .b-date-cont p{
+					font-size: 14px;
+					line-height: 18px;
+					text-align: right;
+					margin-right: 25px;
+				}
+				.b-1 .b-top .b-date-cont h2{
+					font-size: 24px;
+					margin-top: 7px;
+					line-height: 18px;
+					font-family: "SeroPro-Bold";
+				}
+		.b-1 .b-block h1{
+			margin-top: 100px;
+			text-align: left;
+			font-size: 50px;
+			line-height: 50px;
+			font-family: "SeroPro-Bold";
+		}
+		.b-1 .b-block h4{
+			font-size: 21px;
+			line-height: 30px;
+			text-align: left;
+			margin-top: 30px;
+		}
+		.b-line{
+			width: 2560px;
+			height: 200px;
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			position: absolute;
+			left: -790px;
+			top: 392px;
+		}
+		.b-line-1{
+			background-image: url('../i/line-1.png');
+		}
+		.b-1 .b-pips{
+
+		}
+			.b-1 .b-pips li{
+				text-align: left;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+			}
+			.b-1 .b-pips li.b-pip-1{
+				left: 567px;
+				top: 296px;
+			}
+			.b-1 .b-pips li.b-pip-2{
+				left: 777px;
+				top: 279px;
+			}
+			.b-1 .b-pips li.b-pip-3{
+				left: 777px;
+				top: 589px;
+			}
+				.b-1 .b-pips li h3{
+					font-size: 50px;
+					line-height: 22px;
+				}
+				.b-1 .b-pips li p{
+					font-size: 15px;
+					margin-top: 15px;
+					line-height: 22px;
+					margin-bottom: 15px;
+				}
+					.b-1 .b-pips li p a{
+						display: inline-block;
+						font-size: 13px;
+						line-height: 17px;
+						font-family: "SeroPro-Bold";
+						text-transform: uppercase;
+						border-bottom: 2px solid #FFF;
+						padding-bottom: 5px;
+						margin-top: 20px;
+						-webkit-transition: all 100ms ease-out;
+						   -moz-transition: all 100ms ease-out;
+						    -ms-transition: all 100ms ease-out;
+						   	 -o-transition: all 100ms ease-out;
+								transition: all 100ms ease-out;
+					}
+						.b-1 .b-pips li p a:hover{
+							padding-bottom: 1px;
+							border-bottom: 2px dashed #FFF;
+						}
+				.b-1 .b-pips li span{
+					display: block;
+					width: 22px;
+					height: 22px;
+					border: 1px solid #FFF;	
+					position: relative;
+					border-radius: 50%;
+				}
+					.b-1 .b-pips li span:after{
+						border-radius: 50%;
+						position: absolute;
+						content: "s";
+						font-size: 0px;
+						width: 8px;
+						height: 8px;
+						left: 50%;
+						top: 50%;
+						margin-left: -4px;
+						margin-top: -4px;
+						background-color: #FFF;
+					}
+.b-2{
+	background-color: #20b9ae;
+	margin-top: -1px;
+	height: 303px;
+	overflow: hidden;
+}
+	.b-2 .b-block{
+
+	}
+		.b-2 .left{
+
+		}
+			.b-2 .left .b-comm-butt{
+				border: 2px solid #FFF;
+				border-radius: 3px;
+				padding: 22px 24px 15px;
+				display: block;
+				margin: 100px 0px 0px 100px;
+				-webkit-transition: all 100ms ease-out;
+				   -moz-transition: all 100ms ease-out;
+				    -ms-transition: all 100ms ease-out;
+				   	 -o-transition: all 100ms ease-out;
+						transition: all 100ms ease-out;
+			}
+				.b-2 .left .b-comm-butt:hover{
+					background-color: #FFF;
+					color: #20b9ae;
+				}
+				.b-2 .left .b-comm-butt b{
+					font-size: 14px;
+					line-height: 20px;
+					font-family: "SeroPro-Bold";
+					font-weight: normal;
+					letter-spacing: 1px;
+					text-transform: uppercase;
+					display: block;
+					margin-bottom: 9px;
+				}
+				.b-2 .left .b-comm-butt span{
+					display: block;
+					font-size: 12px;
+					line-height: 23px;
+					text-transform: uppercase;
+				}
+		.b-2 .right{
+			padding-top: 28px;
+		}
+			.b-2 .right img{
+				margin-right: -36px;
+				width: 520px;
+			}
+.b-3{
+	background-color: #031823;
+	background-image: url('../i/stars.png');
+}
+	.b-3 .b-block{
+
+	}
+		h2.b-title{
+			padding-top: 92px;
+			font-size: 42px;
+			line-height: 47px;
+			font-family: "SeroPro-Bold";
+		}
+		.b-3 h2.b-title{
+
+		}
+		h4.b-subtitle{
+			font-size: 21px;
+			margin-top: 28px;
+		}
+		.b-3 .b-logo{
+			margin-top: 42px;
+		}
+		.b-3 .b-line-3{
+			margin-top: 42px;
+			background-image: url('../i/line-3.png');
+		}
+		.b-3 .b-pips{
+			padding-bottom: 100px;
+			/*display: inline-block;*/
+			margin-top: 110px;
+		}
+			.b-3 .b-pips li{
+				float: left;
+				position: relative;
+			}
+			.b-3 .b-pips li:nth-child(1){
+				width: 228px;
+				margin-right: 9px;
+			}
+			.b-3 .b-pips li:nth-child(2){
+				width: 245px;
+			}
+			.b-3 .b-pips li:nth-child(3){
+				width: 245px;
+				margin-left: 11px;
+			}
+			.b-3 .b-pips li:nth-child(4){
+				width: 230px;
+				margin-left: 10px;
+			}
+				.b-3 .b-pips li span{
+					position: absolute;
+					left: 50%;
+					top: -40px;
+					margin-left: -14px;
+					display: block;
+					width: 22px;
+					height: 22px;
+					border: 1px solid #FFF;	
+					position: relative;
+					border-radius: 50%;
+				}
+				.b-3 .b-pips li:nth-child(1) span{
+					top: -37px;
+				}
+				.b-3 .b-pips li:nth-child(2) span{
+					top: -47px;
+				}
+				.b-3 .b-pips li:nth-child(3) span{
+					top: -48px;
+				}
+				.b-3 .b-pips li:nth-child(4) span{
+					margin-left: -11px;
+				}
+					.b-3 .b-pips li span:after{
+						border-radius: 50%;
+						position: absolute;
+						content: "s";
+						font-size: 0px;
+						width: 8px;
+						height: 8px;
+						left: 50%;
+						top: 50%;
+						margin-left: -4px;
+						margin-top: -4px;
+						background-color: #FFF;
+					}
+				.b-3 .b-pips li h3{
+					font-size: 13px;
+					font-family: "SeroPro-Bold";
+					text-transform: uppercase;
+					letter-spacing: 1px;
+					margin-bottom: 17px;
+				}
+				.b-3 .b-pips li p{
+
+				}
+.b-4{
+	color: #262626;
+	background-color: #FFF;
+}
+	.b-4 .b-block{
+
+	}
+		.b-4 h2.b-title{
+
+		}
+		.b-4 h4.b-subtitle{
+
+		}
+		.b-4 .b-case{
+			margin-top: 65px;
+			padding-bottom: 100px;
+		}
+			.b-4 .b-case>.left{
+				width: 250px;
+				text-align: left;
+			}
+				.b-left-thumbs{
+
+				}
+				.b-case-thumbs{
+					display: inline-block;
+				}
+					.b-left-thumbs li:first-child{
+						border-top: 1px solid #e5e5e5;
+					}
+					.b-left-thumbs li{
+						border-left: 1px solid #e5e5e5;
+						border-right: 1px solid #e5e5e5;
+						border-bottom: 1px solid #e5e5e5;
+						padding: 25px 15px 26px 55px;
+						width: 150px;
+						position: relative;
+						text-align: left;
+						min-height: 42px;
+					}
+					.b-left-thumbs li.active{
+						background-color: #f7f7f7;
+					}
+						.b-left-thumbs li:hover{
+							cursor: pointer;
+							background-color: #f7f7f7;
+						}
+						.b-left-thumbs li.active:hover{
+							cursor: default;
+						}
+						.b-left-thumbs li.active:after{
+							position: absolute;
+							content: "s";
+							font-size: 0px;
+							right: -16px;
+							top: 0px;
+							background-position: 50% 50%;
+							background-repeat: no-repeat;
+							background-image: url('../i/t-active.png');
+							width: 17px;
+							height: 93px;
+						}
+						.b-left-thumbs li h5{
+							position: absolute;
+							left: 20px;
+							top: 24px;
+							font-size: 16px;
+							font-family: "SeroPro-Bold";
+						}
+						.b-left-thumbs li h6{
+							font-size: 15px;
+							line-height: 21px;
+						}
+			.b-4 .b-case-slider{
+				width: 727px;
+			}
+			.b-4 .b-slide{
+
+			}
+				.b-4 .b-slide .b-gallery{
+
+				}
+					.b-4 .b-slide .b-gallery img{
+
+					}
+				.b-4 .b-slide .b-case-desc{
+					border-top: 1px solid #e5e5e5;
+					margin-top: 112px;
+				}
+					.b-4 .b-slide .b-case-desc h3{
+						margin-top: -38px;
+						font-size: 25px;
+						line-height: 35px;
+						font-family: "SeroPro-Bold";
+						background-color: #FFF;
+						display: inline-block;
+						padding: 0px 20px;
+					}
+					.b-4 .b-slide .b-case-desc>.clearfix{
+						margin-top: 70px;
+					}
+						.b-4 .b-slide .b-case-desc .left{
+							width: 570px;
+							border-right: 1px solid #e5e5e5;
+						}
+							.b-4 .b-slide .b-task{
+								position: relative;
+								text-align: left;
+								width: 420px;
+								margin-left: 145px;
+								margin-bottom: 45px;
+							}
+								.b-4 .b-slide .b-task h5{
+									font-size: 13px;
+									font-family: "SeroPro-Bold";
+									text-transform: uppercase;
+									position: absolute;
+									left: -145px;
+									top: 2px;
+								}
+								.b-4 .b-slide .b-task h6{
+									font-size: 18px;
+									font-family: "SeroPro-Bold";
+									margin-bottom: 23px;
+								}
+								.b-4 .b-slide .b-task p{
+									font-size: 16px;
+									line-height: 24px;
+									padding-right: 20px;
+								}
+							.b-green-butt{
+								border-radius: 3px;
+								font-size: 14px;
+								line-height: 20px;
+								text-transform: uppercase;
+								background-color: #41cfc5;
+								display: inline-block;
+								padding: 26px;
+								margin-left: 145px;
+								-webkit-transition: all 100ms ease-out;
+								   -moz-transition: all 100ms ease-out;
+								    -ms-transition: all 100ms ease-out;
+								   	 -o-transition: all 100ms ease-out;
+										transition: all 100ms ease-out;
+							}
+								.b-green-butt:hover{
+									background-color: #1c7797;
+								}
+							.b-4 .b-green-butt{
+								padding: 26px 26px 26px 60px;
+								position: relative;
+							}
+								.b-4 .b-green-butt:after{
+									position: absolute;
+									content: "s";
+									font-size: 0px;
+									width: 15px;
+									height: 12px;
+									left: 25px;
+									top: 50%;
+									margin-top: -6px;
+									background-position: 50% 50%;
+									background-repeat: no-repeat;
+									background-image: url('../i/b-4/button.png');
+								}
+						.b-4 .b-slide .b-case-desc .right{
+							width: 155px;
+							text-align: center;
+						}
+							.b-4 .b-slide .b-case-desc .b-object{
+								width: 135px;
+								display: inline-block;
+								text-align: left;
+							}
+								.b-4 .b-slide .b-case-desc .b-object li{
+									margin-bottom: 25px;
+								}
+									.b-4 .b-slide .b-case-desc .b-object li .b-img{
+										border-radius: 50%;
+										width: 110px;
+										height: 110px;
+										display: inline-block;
+										background-color: #f7f7f7;
+										margin-left: 5px;
+										margin-bottom: 5px;
+									}
+									.b-4 .b-slide .b-case-desc .b-object li h5{
+										font-size: 15px;
+										line-height: 22px;
+									}
+									.b-4 .b-slide .b-case-desc .b-object li h6{
+										font-size: 15px;
+										line-height: 22px;
+										font-family: "SeroPro-Bold";
+									}
+			
 @media screen and (max-width: 1250px){
 	
 }
 @media screen and (max-width: 1020px){
-
+	.b-1,.b-3{
+		overflow: hidden;
+	}
+	.b-2 .right img{
+		margin-right: 0px;
+		width: 520px;
+	}
 }
