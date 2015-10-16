@@ -45,9 +45,29 @@ $(document).ready(function(){
     }
     $.fn.placeholder();
     
-    $(".b-burger-button").click(function() {
-        $(".menu-overlay").show();    
-    });
+    $(".b-burger-button").click(openMenu);
+
+    $(".menu-overlay, .top-menu li").click(closeMenu);
+
+    function openMenu(){
+        $(".menu-overlay").fadeIn(300);    
+        $(".top-menu").addClass("shown");
+        $(".b-burger-button").addClass("opened").unbind("click").bind("click",closeMenu);
+        $("html").css("overflow","hidden");
+        $("body, html").animate({
+            scrollTop : 0
+        },300);
+        return false;
+    }
+
+    function closeMenu(){
+        $(".menu-overlay").fadeOut(300);
+        $(".top-menu").removeClass("shown");
+        $(".b-burger-button").removeClass("opened").unbind("click").bind("click",openMenu);
+        $("html").css("overflow","auto");
+        return false;
+    }
+
 	// var myPlace = new google.maps.LatLng(55.754407, 37.625151);
  //    var myOptions = {
  //        zoom: 16,

@@ -133,13 +133,22 @@ input:-moz-placeholder {
 			.b-1 .b-top .b-logo-cont{
 
 			}
-				.b-1 .b-top .b-logo-cont .b-burger-button{
+				.b-1 .b-top .b-logo-cont .b-burger-button-cont{
 					display: inline-block;
 					margin-left: 10px;
 					margin-right: 44px;
 					width: 30px;
 					height: 40px;
 					margin-top: 13px;
+					position: relative;
+				}
+				.b-1 .b-top .b-logo-cont .b-burger-button{
+					width: 30px;
+					height: 40px;
+					position: absolute;
+					left: 0px;
+					top: 0px;
+					z-index: 99999;
 				}
 					.b-1 .b-top .b-logo-cont .b-burger-button span{
 						width: 30px;
@@ -155,6 +164,9 @@ input:-moz-placeholder {
 						display: inline-block;
 						background-color: #FFF;
 					}
+						.b-1 .b-top .b-logo-cont .b-burger-button.opened span{
+							background-color: transparent;
+						}
 						.b-1 .b-top .b-logo-cont .b-burger-button span:after,
 						.b-1 .b-top .b-logo-cont .b-burger-button span:before{
 							-webkit-transition: all 100ms ease-out;
@@ -169,12 +181,43 @@ input:-moz-placeholder {
 							height: 2px;
 							left: 0px;
 							background-color: #FFF;
+							-webkit-transform-origin: 0% 50%;
+						       -moz-transform-origin: 0% 50%;
+						    	 -o-transform-origin: 0% 50%;
+						    	-ms-transform-origin: 0% 50%;
+						    		transform-origin: 0% 50%;
 						}
 						.b-1 .b-top .b-logo-cont .b-burger-button span:after{
 							top: -7px;
 						}
+						.b-1 .b-top .b-logo-cont .b-burger-button.opened span:after{
+							top: -11px;
+							-webkit-transition: all 300ms ease-out;
+							   -moz-transition: all 300ms ease-out;
+							    -ms-transition: all 300ms ease-out;
+							   	 -o-transition: all 300ms ease-out;
+									transition: all 300ms ease-out;
+							-webkit-transform: rotate(45deg);
+							   -moz-transform: rotate(45deg);
+							    -ms-transform: rotate(45deg);
+							   	 -o-transform: rotate(45deg);
+									transform: rotate(45deg);
+						}
 						.b-1 .b-top .b-logo-cont .b-burger-button span:before{
 							top: 7px;
+						}
+						.b-1 .b-top .b-logo-cont .b-burger-button.opened span:before{
+							-webkit-transition: all 300ms ease-out;
+							   -moz-transition: all 300ms ease-out;
+							    -ms-transition: all 300ms ease-out;
+							   	 -o-transition: all 300ms ease-out;
+									transition: all 300ms ease-out;
+							-webkit-transform: rotate(-45deg);
+							   -moz-transform: rotate(-45deg);
+							    -ms-transform: rotate(-45deg);
+							   	 -o-transform: rotate(-45deg);
+									transform: rotate(-45deg);
+							top: 11px;
 						}
 					.b-1 .b-top .b-logo-cont .b-burger-button:hover span{
 						opacity: 1;
@@ -1097,13 +1140,33 @@ input:-moz-placeholder {
 
 					}
 .top-menu {
-	margin-top: 140px;
+	margin-top: 170px;
 	width: 440px;
     position: fixed;
+    /*display: none;*/
     z-index: 9000;
     left: 50%;
     margin-left: -220px;
+    opacity: 0;
+    -webkit-transition: all 300ms ease-out;
+       -moz-transition: all 300ms ease-out;
+        -ms-transition: all 300ms ease-out;
+       	 -o-transition: all 300ms ease-out;
+    		transition: all 300ms ease-out;
 }
+	.top-menu.shown{
+		-webkit-transform: translateY(-30px);
+		   -moz-transform: translateY(-30px);
+		    -ms-transform: translateY(-30px);
+		   	 -o-transform: translateY(-30px);
+				transform: translateY(-30px);
+		opacity: 1;
+		-webkit-transition: all 300ms 200ms ease-out;
+	       -moz-transition: all 300ms 200ms ease-out;
+	        -ms-transition: all 300ms 200ms ease-out;
+	       	 -o-transition: all 300ms 200ms ease-out;
+	    		transition: all 300ms 200ms ease-out;
+	}
 	.top-menu li {
 		border-bottom: 1px solid #151b1f;
 		text-align: center;
