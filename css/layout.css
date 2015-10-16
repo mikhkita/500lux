@@ -1208,12 +1208,16 @@ input:-moz-placeholder {
     top: 29px;
     right: 29px;
 }
+.fancybox-opened {
+    margin-bottom: 20px;
+}
 .b-popup {
 	width: 600px;
 	box-sizing: border-box;
 	background-position: 50% 0%;
 	background-repeat: no-repeat;
 	background-size: cover;
+	/*margin-bottom: 30px;*/
 }
 	.b-popup h3{
 		font-size: 30px;
@@ -1222,12 +1226,12 @@ input:-moz-placeholder {
 		line-height: 1.233;
 	}
 	.b-popup h4{
-		font-size: 20px;
-   		width: 350px;
-    	margin-top: 23px;
-    	line-height: 1.4;
-    	color: #fff;
-    	display: inline-block;
+		font-size: 18px;
+		width: 400px;
+		margin-top: 23px;
+		line-height: 1.4;
+		color: #fff;
+		display: inline-block;
 	}
 	.b-popup h5 {
 		font-size: 15px;
@@ -1242,7 +1246,6 @@ input:-moz-placeholder {
 	.b-popup p{
 		display: inline-block;
 		font-size: 16px;
-		font-family: "SeroPro";
 		color: #fff;
 		line-height: 1.5;
 		margin-top: 25px;
@@ -1253,7 +1256,6 @@ input:-moz-placeholder {
 	}
 	.b-popup label {
 		font-size: 12px;
-		font-family: "SeroPro";
 		color: #fff;
 		text-transform: uppercase;
 		display: block;
@@ -1269,7 +1271,7 @@ input:-moz-placeholder {
 		border-radius: 3px;
 		background-color: rgb(255, 255, 255);
 		border: 3px solid #fff;
-		padding: 18px 0 17px;
+		padding: 18px 20px 17px;
 		box-sizing: border-box;
 	}
 	.b-popup input[type=text]:focus {
@@ -1286,19 +1288,51 @@ input:-moz-placeholder {
 		font-family: "SeroPro";
 		cursor: pointer;
 	}
+	.commerse-cont {
+		width: 980px;
+	}
+	.b-popup .commerse {
+		margin-top: 11px;
+	}
+		.b-popup .commerse .right{
+			width: 315px;
+		}
+		.b-popup .commerse .right h4{
+			text-align: left;
+			width: 350px;
+		}
+			.b-popup .commerse .right h4 span{
+				font-size: 20px;
+				font-family: "SeroPro-Bold";
+			} 
+
+.commerse-cont {
+	padding: 93px 75px 55px;
+}
+.commerse-cont input[type=text],.commerse-cont input[type=submit] {
+	width: 315px;
+}
+
 #b-popup-binir .b-popup{
- 	/*box-shadow: 0px 36px 81px 0px rgba(8, 8, 8, 0.7);*/
 	height: 611px;	
 	padding: 270px 0 0;
 	background-image: url("../i/popup-1.jpg");
 }
-#b-popup-consult .b-popup {
+#b-popup-consult .b-popup, #b-popup-callback .b-popup{
 	padding: 93px 50px 55px;
 	background-image: url("../i/popup-2.jpg");
 }
-#b-popup-consult label,#b-popup-consult input[type=text] {
+#b-popup-consult label,#b-popup-consult input[type=text],#b-popup-callback label,#b-popup-callback input[type=text] {
 	text-align: center;
 }
+#b-popup-commerse .b-popup{
+	background-image: url("../i/popup-3.jpg");
+}
+#b-popup-commerse2 .b-popup{
+	padding: 93px 50px 70px;
+	background-image: url("../i/popup-4.jpg");
+}
+
 @media screen and (max-width: 1250px){
 	
 }
