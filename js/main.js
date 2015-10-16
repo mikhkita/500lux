@@ -45,6 +45,9 @@ $(document).ready(function(){
     }
     $.fn.placeholder();
     
+    $(".b-burger-button").click(function() {
+        $(".menu-overlay").show();    
+    });
 	// var myPlace = new google.maps.LatLng(55.754407, 37.625151);
  //    var myOptions = {
  //        zoom: 16,

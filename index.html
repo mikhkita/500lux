@@ -39,6 +39,16 @@
 		<li class="v" style="margin-left:490px"></li>
 		<li class="v" ></li>
 	</ul>
+	<div class="menu-overlay">
+		<ul class="top-menu">
+			<li><a href="#">О компании</a></li>
+			<li><a href="#">Наши объекты</a></li>
+			<li><a href="#">5 визуализаций бесплатно</a></li>
+			<li><a href="#">Узкая специализация</a></li>
+			<li><a href="#">Гарантия сроков</a></li>
+			<li><a href="#">Оптимизируем смету на 35%</a></li>
+		</ul>
+	</div>
 	<div class="b b-1">
 		<div class="b-block">
 			<div class="b-top clearfix">
@@ -51,6 +61,7 @@
 					<p class="left">Звонок по России<br>бесплатный</p>
 					<h2 class="left">8 (800) 555 15 24</h2>
 				</div>
+				
 			</div>
 			<h1>Архитектурное<br>освещение зданий<br>и сооружений по<br>всей России</h1>
 			<h4>Проектирование, поставка, монтаж.<br>Юридическая гарантия сроков</h4>
@@ -76,7 +87,7 @@
 	<div class="b b-2">
 		<div class="b-block clearfix">
 			<div class="left">
-				<a href="#" class="b-comm-butt">
+				<a href="#" class="fancy b-comm-butt" data-block="#b-popup-consult">
 					<b>Получить коммерческое<br>предложение</b>
 					<span>pdf, 2.5 мб.</span>
 				</a>
@@ -298,36 +309,46 @@
 		</div>
 	</div>
 <div style="display:none;">
-	<div id="b-popup-1">
-			<div class="for_all b-popup" >
-				<h3>Оставьте заявку</h3>
-				<h4>и наши специалисты<br>свяжутся с Вами в ближайшее время</h4>
-				<form action="kitsend.php" method="POST" id="b-form-1" data-block="#b-popup-1">
-					<div class="b-popup-form">
-						<label for="name">Введите Ваше имя</label>
-						<input type="text" id="name" name="name" required/>
-						<label for="tel">Введите Ваш номер телефона</label>
-						<input type="text" id="tel" name="phone" required/>
-						<input type="hidden" name="subject" value="Заказ"/>
-						<input type="submit" class="ajax b-orange-butt" value="Заказать">
-					</div>
-				</form>
-			</div>
-		</div>
-		<div id="b-popup-2">
-			<div class="b-thanks b-popup">
-				<h3>Спасибо!</h3>
-				<h4>Ваша заявка успешно отправлена.<br/>Наш менеджер свяжется с Вами в течение часа.</h4>
-				<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
-			</div>
-		</div>
-		<div id="b-popup-error">
-			<div class="b-thanks b-popup">
-				<h3>Ошибка отправки!</h3>
-				<h4>Приносим свои извинения. Пожалуйста, попробуйте отправить Вашу заявку позже.</h4>
-				<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
-			</div>
+	<div id="b-popup-binir">
+		<div class="for_all b-popup">
+			<h3>Бинирование</h3>
+			<p>Перед поставкой измеряем спектральные, колориметрические, фотометрические и электрические величины светодиодов и светодиодных матриц с последующей бин-классификацией.</p>
+			<p>Сохраняем все эти данные на облаке, и при необходимости легко поставляем светильники с цветовой температурой 1 в 1 как в поставке</p>
 		</div>
 	</div>
+	<div id="b-popup-consult">
+		<div class="for_all b-popup">
+			<h3>Получите консультацию специалиста 500lux</h3>
+			<h4>Оставьте ваши данные, и Сергей свяжется с Вами в течение 12 минут</h4>
+			<form action="kitsend.php" method="POST">
+				<div class="b-popup-form">
+					<label for="name">Введите Ваше имя</label>
+					<input type="text" id="name" name="name" required placeholder="Иван Иванов">
+					<label for="email">Введите Ваш E-mail</label>
+					<input type="text" id="email" name="email" required placeholder="mail@mail.ru">
+					<label for="tel">Телефон для уточнения деталей</label>
+					<input type="text" id="tel" name="phone" required placeholder="+7 (___) ___-__-__">
+					<input type="hidden" name="subject" value="Консультация">
+					<input type="submit" class="ajax b-green-butt" value="Получить консультацию">
+				</div>
+			</form>
+			<h5>или позвоните нам по телефону<br><span>8 (495) 212-16-71</span></h5>
+		</div>
+	</div>
+	<div id="b-popup-2">
+		<div class="b-thanks b-popup">
+			<h3>Спасибо!</h3>
+			<h4>Ваша заявка успешно отправлена.<br/>Наш менеджер свяжется с Вами в течение часа.</h4>
+			<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
+		</div>
+	</div>
+	<div id="b-popup-error">
+		<div class="b-thanks b-popup">
+			<h3>Ошибка отправки!</h3>
+			<h4>Приносим свои извинения. Пожалуйста, попробуйте отправить Вашу заявку позже.</h4>
+			<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
+		</div>
+	</div>
+</div>
 </body>
 </html>

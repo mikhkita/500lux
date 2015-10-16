@@ -50,8 +50,8 @@ label.error{
 	display: none !important;
 }
 input.error,textarea.error{
-	border: 1px solid #F00 !important;
-	box-shadow: 0 0px 0px 1px #F00;
+	border: 3px solid #ff636b !important;
+	color: #ff636b;
 }
 .ps-lines{
 	display: none;
@@ -102,10 +102,14 @@ input.error,textarea.error{
 	margin-left: -490px;
 }
 input::-webkit-input-placeholder {
-	color: #434343;
+	font-size: 16px;
+	font-family: "SeroPro";
+	color: rgba(0, 0, 0, 0.502);
 }
 input:-moz-placeholder {
-	color: #434343;
+	font-size: 16px;
+	font-family: "SeroPro";
+	color: rgba(0, 0, 0, 0.502);
 }
 .b-orange-butt{
 
@@ -1092,7 +1096,150 @@ input:-moz-placeholder {
 					.b-way-6 .b-text-cont p{
 
 					}
+.top-menu {
+	margin-top: 140px;
+	width: 440px;
+    position: fixed;
+    z-index: 9000;
+    left: 50%;
+    margin-left: -220px;
+}
+	.top-menu li {
+		border-bottom: 1px solid #151b1f;
+		text-align: center;
+		cursor: pointer;
+	}
+	.top-menu li:last-child {
+		border-bottom: none;
+	}
+		.top-menu li a{
+			font-size: 21px;
+			font-family: "SeroPro-Bold";
+			color: rgb(255, 255, 255);
+			text-transform: uppercase;
+			line-height: 3.762;
+		}
+		.top-menu li:hover {
+			background-color: #41d0c6;
+		}
+.menu-overlay {
+	width: auto;
+    height: auto;
+    display: block;
 
+    overflow: auto;
+    overflow-y: scroll;
+
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    display: none;
+    z-index: 8010;
+    background-color: rgba(8, 14, 19,0.98);
+}
+.fancybox-close {
+	background-image: url("../i/popup-close.png");
+	width: 42px;
+    height: 42px;
+    top: 29px;
+    right: 29px;
+}
+.b-popup {
+	width: 600px;
+	box-sizing: border-box;
+	background-position: 50% 0%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+	.b-popup h3{
+		font-size: 30px;
+		font-family: "SeroPro-Bold";
+		color: #fff;
+		line-height: 1.233;
+	}
+	.b-popup h4{
+		font-size: 20px;
+   		width: 350px;
+    	margin-top: 23px;
+    	line-height: 1.4;
+    	color: #fff;
+    	display: inline-block;
+	}
+	.b-popup h5 {
+		font-size: 15px;
+		font-family: "SeroPro";
+		color: #fff;
+		margin-top: 22px;
+		line-height: 1.5;
+	}
+		.b-popup h5 span{
+			font-family: "SeroPro-Bold";
+		}
+	.b-popup p{
+		display: inline-block;
+		font-size: 16px;
+		font-family: "SeroPro";
+		color: #fff;
+		line-height: 1.5;
+		margin-top: 25px;
+		width: 420px;
+	}
+	.b-popup-form {
+		margin-top: 38px;
+	}
+	.b-popup label {
+		font-size: 12px;
+		font-family: "SeroPro";
+		color: #fff;
+		text-transform: uppercase;
+		display: block;
+		margin-bottom: 14px;
+		margin-top: 19px;
+		letter-spacing: 1px;
+		text-align: left;
+	}
+	.b-popup input[type=text] {
+		font-family: "SeroPro";
+		width: 385px;
+		font-size: 16px;
+		border-radius: 3px;
+		background-color: rgb(255, 255, 255);
+		border: 3px solid #fff;
+		padding: 18px 0 17px;
+		box-sizing: border-box;
+	}
+	.b-popup input[type=text]:focus {
+		border: 3px solid #ffcc00 !important;
+		color: #212121;
+	}
+	.b-popup input[type=submit] {
+		border: none;
+		margin-left: 0;
+		color: #fff;
+		margin-top: 30px;
+		width: 385px;
+		letter-spacing: 1.3px;
+		font-family: "SeroPro";
+		cursor: pointer;
+	}
+#b-popup-binir .b-popup{
+ 	/*box-shadow: 0px 36px 81px 0px rgba(8, 8, 8, 0.7);*/
+	height: 611px;	
+	padding: 270px 0 0;
+	background-image: url("../i/popup-1.jpg");
+}
+#b-popup-consult .b-popup {
+	padding: 93px 50px 55px;
+	background-image: url("../i/popup-2.jpg");
+}
+#b-popup-consult label,#b-popup-consult input[type=text] {
+	text-align: center;
+}
 @media screen and (max-width: 1250px){
 	
 }
