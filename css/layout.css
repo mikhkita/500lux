@@ -1133,11 +1133,8 @@ input:-moz-placeholder {
     position: fixed;
     bottom: 0;
     right: 0;
-
-    position: absolute;
     top: 0;
     left: 0;
-    overflow: hidden;
     display: none;
     z-index: 8010;
     background-color: rgba(8, 14, 19,0.98);
