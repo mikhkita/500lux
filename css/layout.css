@@ -1199,7 +1199,7 @@ input:-moz-placeholder {
     top: 0;
     left: 0;
     display: none;
-    z-index: 8010;
+    z-index: 2000;
     background-color: rgba(8, 14, 19,0.98);
 }
 .fancybox-close {
@@ -1296,6 +1296,39 @@ input:-moz-placeholder {
 	.b-popup .commerse {
 		margin-top: 11px;
 	}
+		.b-popup .commerse .left{
+			width: 140px;
+			height: 140px;
+			border-radius: 50%;
+			background-color: #41d0c6;
+			color: #fff;
+			margin-top: 240px;
+			margin-left: 100px;
+			padding-top: 65px;
+			box-sizing: border-box;
+			font-weight: 700;
+			font-size: 12px;
+			line-height: 1.583;
+			text-transform: uppercase;
+			cursor: pointer;
+			position: relative;
+			letter-spacing: 1.3px;
+		}
+			.b-popup .commerse .left:hover {
+				background-color: #1c7797;
+			}
+			.b-popup .commerse .left:before {
+				position: absolute;
+				font-size: 0;
+				content: "";
+				width: 21px;
+				height: 12px;
+				background-image: url("../i/popup-icon.png");
+				top: 40px;
+				left: 50%;
+				margin-left: -11px;
+			}
+
 		.b-popup .commerse .right{
 			width: 315px;
 		}
@@ -1390,9 +1423,12 @@ input:-moz-placeholder {
 	background-image: url("../i/popup-3.jpg");
 }
 #b-popup-commerse2 .b-popup{
-	padding: 93px 50px 70px;
+	padding: 93px 75px 70px;
 	background-image: url("../i/popup-4.jpg");
 }
+	#b-popup-commerse2 .b-popup .left {
+		margin-top: 175px;
+	}
 #b-popup-visual .b-popup{
 	padding: 93px 50px 62px;
 	background-image: url("../i/popup-5.jpg");
