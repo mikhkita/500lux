@@ -54,7 +54,7 @@ input.error,textarea.error{
 	box-shadow: 0 0px 0px 1px #F00;
 }
 .ps-lines{
-
+	display: none;
 }
 	.ps-lines li.v{
 		position: fixed;
@@ -130,25 +130,57 @@ input:-moz-placeholder {
 
 			}
 				.b-1 .b-top .b-logo-cont .b-burger-button{
-					background-position: 50% 50%;
-					background-repeat: no-repeat;
-					background-image: url('../i/burger.png');
-					width: 30px;
-					height: 30px;
 					display: inline-block;
 					margin-left: 10px;
 					margin-right: 44px;
-					margin-top: 18px;
-					opacity: 0.7;
-					-webkit-transition: all 100ms ease-out;
-					   -moz-transition: all 100ms ease-out;
-					    -ms-transition: all 100ms ease-out;
-					   	 -o-transition: all 100ms ease-out;
-							transition: all 100ms ease-out;
+					width: 30px;
+					height: 40px;
+					margin-top: 13px;
 				}
-					.b-1 .b-top .b-logo-cont .b-burger-button:hover{
+					.b-1 .b-top .b-logo-cont .b-burger-button span{
+						width: 30px;
+						top: 5px;
+						height: 2px;
+						opacity: 0.7;
+						-webkit-transition: all 100ms ease-out;
+						   -moz-transition: all 100ms ease-out;
+						    -ms-transition: all 100ms ease-out;
+						   	 -o-transition: all 100ms ease-out;
+								transition: all 100ms ease-out;
+						position: relative;
+						display: inline-block;
+						background-color: #FFF;
+					}
+						.b-1 .b-top .b-logo-cont .b-burger-button span:after,
+						.b-1 .b-top .b-logo-cont .b-burger-button span:before{
+							-webkit-transition: all 100ms ease-out;
+							   -moz-transition: all 100ms ease-out;
+							    -ms-transition: all 100ms ease-out;
+							   	 -o-transition: all 100ms ease-out;
+									transition: all 100ms ease-out;
+							position: absolute;
+							content: "s";
+							font-size: 0px;
+							width: 100%;
+							height: 2px;
+							left: 0px;
+							background-color: #FFF;
+						}
+						.b-1 .b-top .b-logo-cont .b-burger-button span:after{
+							top: -7px;
+						}
+						.b-1 .b-top .b-logo-cont .b-burger-button span:before{
+							top: 7px;
+						}
+					.b-1 .b-top .b-logo-cont .b-burger-button:hover span{
 						opacity: 1;
 					}
+						.b-1 .b-top .b-logo-cont .b-burger-button:hover span:after{
+							top: -11px;
+						}
+						.b-1 .b-top .b-logo-cont .b-burger-button:hover span:before{
+							top: 11px;
+						}
 				.b-1 .b-top .b-logo-cont img{
 					margin-right: 40px;
 					width: 163px;
@@ -229,23 +261,37 @@ input:-moz-placeholder {
 					line-height: 22px;
 					margin-bottom: 15px;
 				}
-					.b-1 .b-pips li p a{
+					a.b-white-link{
 						display: inline-block;
+						position: relative;
+						letter-spacing: 1px;
 						font-size: 13px;
 						line-height: 17px;
 						font-family: "SeroPro-Bold";
 						text-transform: uppercase;
-						border-bottom: 2px solid #FFF;
-						padding-bottom: 5px;
-						margin-top: 20px;
-						-webkit-transition: all 100ms ease-out;
-						   -moz-transition: all 100ms ease-out;
-						    -ms-transition: all 100ms ease-out;
-						   	 -o-transition: all 100ms ease-out;
-								transition: all 100ms ease-out;
+						/*border-bottom: 2px solid #FFF;*/
+						padding-bottom: 10px;
 					}
-						.b-1 .b-pips li p a:hover{
-							padding-bottom: 1px;
+						a.b-white-link:after{
+							position: absolute;
+							content: "s";
+							font-size: 0px;
+							width: 100%;
+							height: 1px;
+							left: 0px;
+							bottom: 3px;
+							border-bottom: 2px solid #FFF;
+							-webkit-transition: all 100ms ease-out;
+							   -moz-transition: all 100ms ease-out;
+							    -ms-transition: all 100ms ease-out;
+							   	 -o-transition: all 100ms ease-out;
+									transition: all 100ms ease-out;
+						}
+					.b-1 .b-pips li p a{
+						margin-top: 20px;
+					}
+						a.b-white-link:hover:after{
+							bottom: 8px;
 							border-bottom: 2px dashed #FFF;
 						}
 				.b-1 .b-pips li span{
@@ -287,11 +333,11 @@ input:-moz-placeholder {
 				padding: 22px 24px 15px;
 				display: block;
 				margin: 100px 0px 0px 100px;
-				-webkit-transition: all 100ms ease-out;
-				   -moz-transition: all 100ms ease-out;
-				    -ms-transition: all 100ms ease-out;
-				   	 -o-transition: all 100ms ease-out;
-						transition: all 100ms ease-out;
+				-webkit-transition: all 150ms ease-out;
+				   -moz-transition: all 150ms ease-out;
+				    -ms-transition: all 150ms ease-out;
+				   	 -o-transition: all 150ms ease-out;
+						transition: all 150ms ease-out;
 			}
 				.b-2 .left .b-comm-butt:hover{
 					background-color: #FFF;
@@ -457,6 +503,11 @@ input:-moz-placeholder {
 						position: relative;
 						text-align: left;
 						min-height: 42px;
+						-webkit-transition: all 100ms ease-out;
+						   -moz-transition: all 100ms ease-out;
+						    -ms-transition: all 100ms ease-out;
+						   	 -o-transition: all 100ms ease-out;
+								transition: all 100ms ease-out;
 					}
 					.b-left-thumbs li.active{
 						background-color: #f7f7f7;
@@ -557,11 +608,11 @@ input:-moz-placeholder {
 								display: inline-block;
 								padding: 26px;
 								margin-left: 145px;
-								-webkit-transition: all 100ms ease-out;
-								   -moz-transition: all 100ms ease-out;
-								    -ms-transition: all 100ms ease-out;
-								   	 -o-transition: all 100ms ease-out;
-										transition: all 100ms ease-out;
+								-webkit-transition: all 150ms ease-out;
+								   -moz-transition: all 150ms ease-out;
+								    -ms-transition: all 150ms ease-out;
+								   	 -o-transition: all 150ms ease-out;
+										transition: all 150ms ease-out;
 							}
 								.b-green-butt:hover{
 									background-color: #1c7797;
@@ -613,12 +664,440 @@ input:-moz-placeholder {
 										line-height: 22px;
 										font-family: "SeroPro-Bold";
 									}
-			
+.b-5{
+	background-position: 50% 50%;
+	background-image: url('../i/stars.png');
+	background-color: #031724;
+	height: 909px;
+}
+	.b-5 .b-top-block{
+		z-index: 100;
+	}
+		.b-5 h2{
+
+		}
+		.b-5 h2.b-title{
+
+		}
+		.b-5 h4.b-subtitle{
+
+		}
+		.b-5 .b-line-5{
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			background-image: url('../i/line-5.png');
+			margin-top: -100px;
+			width: 2500px;
+			left: -730px;
+		}
+		.b-5 .b-steps{
+			position: relative;
+		}
+			.b-5 .b-steps li{
+				cursor: pointer;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				opacity: 0.5;
+				-webkit-transition: all 150ms ease-out;
+				   -moz-transition: all 150ms ease-out;
+				    -ms-transition: all 150ms ease-out;
+				   	 -o-transition: all 150ms ease-out;
+						transition: all 150ms ease-out;
+			}
+				.b-5 .b-steps li.active,
+				.b-5 .b-steps li:hover{
+					opacity: 1;
+				}
+				.b-5 .b-steps li.active{
+					cursor: default;
+				}
+			.b-5 .b-steps li:nth-child(1){
+				left: -1px;
+				top: 47px;
+			}
+			.b-5 .b-steps li:nth-child(2){
+				left: 175px;
+				top: 38px;
+			}
+			.b-5 .b-steps li:nth-child(3){
+				left: 334px;
+				top: 33px;
+			}
+			.b-5 .b-steps li:nth-child(4){
+				left: 540px;
+				top: 32px;
+			}
+			.b-5 .b-steps li:nth-child(5){
+				left: 711px;
+				top: 36px;
+			}
+			.b-5 .b-steps li:nth-child(6){
+				left: 856px;
+				top: 43px;
+			}
+				.b-5 .b-steps li div{
+					display: inline-block;
+					width: 48px;
+					height: 48px;
+					border-radius: 50%;
+					box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1);
+					margin-bottom: 16px;
+					position: relative;
+				}
+					.b-5 .b-steps li.active div,
+					.b-5 .b-steps li:hover div{
+						/*box-shadow: inset 0 0 0 1px rgba(255,255,255,1);*/
+					}
+					.b-5 .b-steps li div:before{
+						position: absolute;
+						content: "s";
+						font-size: 0px;
+						width: 28px;
+						height: 28px;
+						left: 10px;
+						top: 10px;
+						background-color: rgba(255,255,255,0.1);
+						border-radius: 50%;
+						-webkit-transition: all 150ms ease-out;
+						   -moz-transition: all 150ms ease-out;
+						    -ms-transition: all 150ms ease-out;
+						   	 -o-transition: all 150ms ease-out;
+								transition: all 150ms ease-out;
+					}
+					.b-5 .b-steps li.active div:before,
+					.b-5 .b-steps li:hover div:before{
+						width: 48px;
+						height: 48px;
+						left: 0px;
+						top: 0px;
+						background-color: #FFF;
+					}
+					.b-5 .b-steps li div span{
+						height: 28px;
+						line-height: 28px;
+						font-size: 14px;
+						display: inline-block;
+						-webkit-transition: all 150ms ease-out;
+						   -moz-transition: all 150ms ease-out;
+						    -ms-transition: all 150ms ease-out;
+						   	 -o-transition: all 150ms ease-out;
+								transition: all 150ms ease-out;
+						position: absolute;
+						left: 0px;
+						top: 10px;
+						width: 48px;
+					}
+						.b-5 .b-steps li.active div span,
+						.b-5 .b-steps li:hover div span{
+							color: #031823;
+						}
+				.b-5 .b-steps li p{
+					font-size: 12px;
+					letter-spacing: 1px;
+					font-family: "SeroPro-Bold";
+					text-transform: uppercase;
+				}
+			.b-way-nav{
+				position: absolute;
+				top: 620px;
+				width: 48px;
+				height: 48px;
+				box-shadow: inset 0 0 0 1px #FFF;
+				z-index: 101;
+				border-radius: 50%;
+				cursor: pointer;
+				-webkit-transition: all 150ms ease-out;
+				   -moz-transition: all 150ms ease-out;
+				    -ms-transition: all 150ms ease-out;
+				   	 -o-transition: all 150ms ease-out;
+						transition: all 150ms ease-out;
+			}
+				.b-way-nav:hover{
+					box-shadow: inset 0 0 0 25px #FFF;
+				}
+				.b-way-nav:after{
+					position: absolute;
+					content: "s";
+					font-size: 0px;
+					width: 15px;
+					height: 28px;
+					left: 50%;
+					top: 50%;
+					margin-top: -14px;
+					background-repeat: no-repeat;
+					background-image: url('../i/arrow-sprite.png');
+				}
+			.b-way-nav-left{
+				left: 0px;
+			}
+				.b-way-nav-left:after{
+					margin-left: -9px;
+					background-position: 0px 50%;
+				}
+				.b-way-nav-left:hover:after{
+					background-position: -30px 50%;
+				}
+			.b-way-nav-right{
+				right: 0px;
+			}
+				.b-way-nav-right:after{
+					margin-left: -5px;
+					background-position: -15px 50%;
+				}
+				.b-way-nav-right:hover:after{
+					background-position: -45px 50%;
+				}
+	.b-way-list{
+		position: relative;
+		width: 100%;
+	}
+		.b-way{
+			display: none;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+		}
+		.b-way-1{
+			display: block;
+			height: 909px;
+		}
+			.b-way .b-block{
+				height: 100%;
+			}
+				.b-way-1 .b-shine{
+					position: absolute;
+					left: -531px;
+					bottom: 0px;
+					background-position: 50% 50%;
+					background-size: 1272px;
+					background-image: url('../i/b-5/1/shine.png');
+					width: 1272px;
+					height: 762px;
+				}
+				.b-way-1 .b-book{
+					position: absolute;
+					left: -250px;
+					bottom: 0px;
+					z-index: 1;
+					background-position: 50% 50%;
+					background-repeat: no-repeat;
+					background-image: url('../i/b-5/1/book.png');
+					width: 696px;
+					height: 493px;
+				}
+				.b-way-1 .b-text-cont,
+				.b-way-3 .b-text-cont{
+					text-align: left;
+					position: absolute;
+					left: 505px;
+					top: 475px;
+					z-index: 10;
+				}
+					.b-way .b-text-cont h3{
+						font-size: 25px;
+						line-height: 35px;
+					}
+					.b-way-1 .b-text-cont h3,
+					.b-way-3 .b-text-cont h3{
+						text-align: left;
+						font-size: 25px;
+						line-height: 35px;
+						width: 400px;
+						margin-bottom: 40px;
+					}
+					.b-way .b-text-cont p{
+						color: #acc7d9;
+						font-size: 16px;
+						line-height: 27px;
+						position: relative;
+						margin-bottom: 13px;
+					}
+					.b-way-1 .b-text-cont p{
+						
+					}
+						.b-way .b-text-cont p span{
+							font-family: "SeroPro-Bold";
+							position: absolute;
+							left: -40px;
+							top: 0px;
+						}
+						.b-way-1 .b-text-cont p span{
+							
+						}
+					.b-way-1 .b-text-cont a.b-white-link{
+						margin-top: 22px;
+					}
+		.b-way-3{
+			height: 909px;
+		}
+			.b-way-3 .b-block{
+				height: 100%;
+			}
+				.b-way-3 .b-lamp{
+					background-position: 50% 50%;
+					background-repeat: no-repeat;
+					background-image: url('../i/b-5/3/lamp.png');
+					width: 490px;
+					height: 610px;
+					z-index: 12;
+					position: absolute;
+					left: 75px;
+					bottom: 0px;
+				}
+				.b-way-3 .b-shine{
+					position: absolute;
+					left: -790px;
+					bottom: 0px;
+					background-position: 50% 0%;
+					background-repeat: no-repeat;
+					background-size: 2176px;
+					background-image: url('../i/b-5/3/shine.png');
+					width: 2176px;
+					height: 533px;
+					z-index: 10;
+				}
+				.b-way-3 .b-text-cont{
+
+				}
+					.b-way-3 .b-text-cont h3{
+						width: 460px;
+					}
+					.b-way-3 .b-text-cont p{
+
+					}
+						.b-way-3 .b-text-cont p span{
+
+						}
+		.b-way-4{
+			height: 1140px;
+		}
+			.b-way-4 .b-block{
+				height: 100%;
+			}
+				.b-way-4 .b-shine{
+					background-position: 50% 50%;
+					background-repeat: no-repeat;
+					background-image: url('../i/b-5/4/shine.png');
+					width: 1150px;
+					height: 1001px;
+					background-size: 1150px;
+					position: absolute;
+					left: -400px;
+					top: 0px;
+				}
+				.b-way-4 .b-map{
+					background-position: 50% 50%;
+					background-repeat: no-repeat;
+					background-image: url('../i/b-5/4/map.png');
+					width: 1575px;
+					height: 548px;
+					background-size: 1575px;
+					position: absolute;
+					left: -270px;
+					bottom: 0px;
+				}
+				.b-way-4 .b-text-cont{
+					position: absolute;
+					left: 0px;
+					top: 485px;
+					width: 100%;
+				}
+					.b-way-4 .b-text-cont h3{
+
+					}
+					.b-way-4 .b-text-cont .b-list{
+						text-align: left;
+						display: inline-block;
+						margin-left: 90px;
+						margin-top: 30px;
+					}
+						.b-way-4 .b-text-cont .b-list p{
+							float: left;
+							margin-right: 60px;
+						}
+							.b-way-4 .b-text-cont .b-list p span{
+
+							}
+		.b-way-5{
+			height: 909px;
+		}
+			.b-way-5 .b-block{
+				height: 100%;
+			}
+				.b-way-5 .b-workers{
+					background-position: 50% 50%;
+					background-repeat: no-repeat;
+					background-image: url('../i/b-5/5/workers.png');
+					width: 2536px;
+					height: 909px;
+					background-size: 2536px;
+					position: absolute;
+					left: -790px;
+					top: 0px;
+				}
+					.b-way-5 .b-text-cont{
+						position: absolute;
+						left: 0px;
+						top: 525px;
+						width: 100%;
+					}
+						.b-way-5 .b-text-cont h3{
+							font-size: 35px;
+							line-height: 40px;
+							margin-bottom: 30px;
+						}
+						.b-way-5 .b-text-cont p{
+
+						}
+		.b-way-6{
+			height: 1024px;
+		}
+			.b-way-6 .b-block{
+				height: 100%;
+			}
+				.b-way-6 .b-lamps{
+					background-position: 50% 50%;
+					background-repeat: no-repeat;
+					background-image: url('../i/b-5/6/lamps.png');
+					width: 839px;
+					height: 322px;
+					position: absolute;
+					left: 73px;
+					bottom: 0px;
+				}
+				.b-way-6 .b-shine{
+					background-position: 50% 50%;
+					background-repeat: no-repeat;
+					background-image: url('../i/b-5/6/shine.png');
+					background-size: 1616px;
+					width: 1616px;
+					height: 869px;
+					position: absolute;
+					left: 0px;
+					bottom: 0px;
+				}
+				.b-way-6 .b-text-cont{
+					position: absolute;
+					left: 0px;
+					top: 470px;
+					width: 100%;
+				}
+					.b-way-6 .b-text-cont h3{
+						font-size: 35px;
+						line-height: 40px;
+						margin-bottom: 25px;
+					}
+					.b-way-6 .b-text-cont p{
+
+					}
+
 @media screen and (max-width: 1250px){
 	
 }
 @media screen and (max-width: 1020px){
-	.b-1,.b-3{
+	.b-1,.b-3,.b-5{
 		overflow: hidden;
 	}
 	.b-2 .right img{

@@ -1,5 +1,7 @@
 $(document).ready(function(){	
-    $(window).stellar();
+    $(window).stellar({
+        positionProperty: 'transform'
+    });
     
     function resize(){
        if( typeof( window.innerWidth ) == 'number' ) {
