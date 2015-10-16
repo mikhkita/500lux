@@ -49,6 +49,7 @@ $(document).ready(function(){
 	            	locked: true 
 	         	}
 	      	},
+
 			beforeShow: function(){
 				$popup.find(".custom-field").remove();
 				if( $this.attr("data-value") ){
@@ -60,6 +61,9 @@ $(document).ready(function(){
 				}
 			},
 			afterShow: function(){
+				if($(".popup-text:visible").length) {
+					$(".fancybox-close").css("background-image",'url("i/popup-close-grey.png")');
+				}
 				if( $this.attr("data-afterShow") && customHandlers[$this.attr("data-afterShow")] ){
 					customHandlers[$this.attr("data-afterShow")]($this);
 				}
