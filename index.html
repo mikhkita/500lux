@@ -32,6 +32,7 @@
 	<script type="text/javascript" src="js/KitAnimate.js"></script>
 	<script type="text/javascript" src="js/device.js"></script>
 	<script type="text/javascript" src="js/KitSend.js"></script>
+	<script type="text/javascript" src="js/KitSlider.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 
 </head>
@@ -150,7 +151,7 @@
 					</ul>
 				</div>
 				<div class="right b-slider b-case-slider">
-					<div class="b-slide">
+					<div class="b-slide" style="display: block;">
 						<div class="b-gallery">
 							<div class="img" style="background-image:url('i/b-4/1/img.jpg');"></div>
 							<div class="img" style="background-image:url('i/b-4/1/img.jpg');"></div>
@@ -306,25 +307,25 @@
 					<p>Обслуживание</p>
 				</li>
 			</ul>
-			<span class="b-way-nav b-way-nav-left"></span>
-			<span class="b-way-nav b-way-nav-right"></span>
+			<span class="b-way-nav b-way-nav-left" onselectstart="return false;"></span>
+			<span class="b-way-nav b-way-nav-right" onselectstart="return false;"></span>
 		</div>
 		<ul class="b-way-list">
-			<li class="b-way b-way-1" id="b-way-1">
+			<li class="b-way b-way-1" id="b-way-1" data-height="909">
 				<div class="b-block">
 					<div class="b-book"></div>
 					<div class="b-shine"></div>
 					<div class="b-text-cont">
-						<h3>Собираем информацию и формируем техническое задание по 17 пунктам:</h3>
-						<p><span>01.</span>Выявление ключевых задач объекта</p>
-						<p><span>02.</span>Изучение объекта</p>
-						<p><span>03.</span>Изучение истории бренда</p>
-						<p><span>04.</span>Изучение световой и архитектурной среды территории</p>
-						<a href="#" class="b-white-link">Смотреть все пункты</a>
+						<h3 class="step" data-delay="200">Собираем информацию и формируем техническое задание по 17 пунктам:</h3>
+						<p class="step" data-delay="800"><span>01.</span>Выявление ключевых задач объекта</p>
+						<p class="step" data-delay="900"><span>02.</span>Изучение объекта</p>
+						<p class="step" data-delay="1000"><span>03.</span>Изучение истории бренда</p>
+						<p class="step" data-delay="1100"><span>04.</span>Изучение световой и архитектурной среды территории</p>
+						<a href="#" class="b-white-link step" data-delay="1200">Смотреть все пункты</a>
 					</div>
 				</div>
 			</li>
-			<li class="b-way b-way-3" id="b-way-3">
+			<li class="b-way b-way-2" id="b-way-2" data-height="909">
 				<div class="b-block">
 					<div class="b-lamp"></div>
 					<div class="b-shine"></div>
@@ -337,36 +338,49 @@
 					</div>
 				</div>
 			</li>
-			<li class="b-way b-way-4" id="b-way-4">
+			<li class="b-way b-way-3" id="b-way-3" data-height="909">
+				<div class="b-block">
+					<div class="b-lamp"></div>
+					<div class="b-shine"></div>
+					<div class="b-text-cont">
+						<h3 class="step" data-delay="200">Предоставим до 10 светильников на тест-драйв бесплатно. В согласование проекта также входит:</h3>
+						<p class="step" data-delay="800"><span>01.</span>Презентация образцов продукции.</p>
+						<p class="step" data-delay="900"><span>02.</span>Экскурсия на фабрику-производителя</p>
+						<p class="step" data-delay="1000"><span>03.</span>Монтаж нескольких светильников. Демонстрация,<br>как это будет выглядеть на фасаде.</p>
+						<p class="step" data-delay="1100"><span>04.</span>Утверждение концепции.</p>
+					</div>
+				</div>
+			</li>
+			<li class="b-way b-way-4" id="b-way-4" data-height="1140">
 				<div class="b-block">
 					<div class="b-shine"></div>
 					<div class="b-map"></div>
 					<div class="b-text-cont">
-						<h3>Подберем идеальное оборудование<br>под вашу задачу из 11 000 изделий<br>на 56-ти заводах!</h3>
+						<h3 class="step" data-delay="200">Подберем идеальное оборудование<br>под вашу задачу из 11 000 изделий<br>на 56-ти заводах!</h3>
 						<div class="b-list clearfix">
-							<p><span>01.</span>Сохраняем качество и<br>экономим до 35% за счет<br>подбора аналогичных изделий.</p>
-							<p><span>02.</span>Юридически гарантируем<br>срок поставки.</p>
-							<p><span>03.</span>Поставляем на 5% больше,<br>чтобы сэкономить время<br>в случае поломки на стройке.</p>
+							<p class="step" data-delay="800"><span>01.</span>Сохраняем качество и<br>экономим до 35% за счет<br>подбора аналогичных изделий.</p>
+							<p class="step" data-delay="1200"><span>02.</span>Юридически гарантируем<br>срок поставки.</p>
+							<p class="step" data-delay="1600"><span>03.</span>Поставляем на 5% больше,<br>чтобы сэкономить время<br>в случае поломки на стройке.</p>
 						</div>
 					</div>
 				</div>
 			</li>
-			<li class="b-way b-way-5" id="b-way-5">
+			<li class="b-way b-way-5" id="b-way-5" data-height="909">
 				<div class="b-block">
 					<div class="b-workers"></div>
 					<div class="b-text-cont">
-						<h3>За 3 дня выведем на ваш объект<br>до 12 монтажников 4-го разряда<br>с опытом от 5 лет</h3>
-						<p>Экономим до 2-х недель. Начинаем монтажные работы параллельно<br>с производством ветильников.</p>
+						<h3 class="step" data-delay="200">За 3 дня выведем на ваш объект<br>до 12 монтажников 4-го разряда<br>с опытом от 5 лет</h3>
+						<p class="step" data-delay="800">Экономим до 2-х недель. Начинаем монтажные работы параллельно<br>с производством ветильников.</p>
 					</div>
 				</div>
 			</li>
-			<li class="b-way b-way-6" id="b-way-6">
+			<li class="b-way b-way-6" id="b-way-6" data-height="1024">
 				<div class="b-block">
 					<div class="b-lamps"></div>
 					<div class="b-shine"></div>
 					<div class="b-text-cont">
-						<h3>Если светильник вышел из строя,<br>мы заменим его за 5 дней</h3>
-						<p>Вам не нужно звонить на завод, ждать 21 рабочий день пока ответят на рекламацию<br>и так далее. Если светильник перегорел, мы в тот же день отправим его на завод и<br>запустим производство нового. Через  5 рабочих дней проблема будет решена.</p>
+						<h3 class="step" data-delay="200">Если светильник вышел из строя,<br>мы заменим его за 5 дней</h3>
+						<p class="step" data-delay="800">Вам не нужно звонить на завод, ждать 21 рабочий день пока ответят на рекламацию<br>и так далее. Если светильник перегорел, мы в тот же день отправим его на завод и<br>запустим производство нового. Через  5 рабочих дней проблема будет решена.</p>
 					</div>
 				</div>
 			</li>
@@ -424,10 +438,62 @@
 				<div class="right b-slider b-staff-slider">
 					<span class="b-staff-nav b-left-butt"></span>
 					<span class="b-staff-nav b-right-butt"></span>
-					<div class="b-slide">
+					<div class="b-slide" style="display: block;">
 						<div class="b-image-cont">
 							<div class="b-image" style="background-image: url('i/b-6/man.png');"></div>
 							<h3>Сергей Максимов</h3>
+							<h5>Генеральный директор</h5>
+						</div>
+						<ul class="b-skill clearfix">
+							<li>
+								<p>10 лет<br>стажа</p>
+							</li>
+							<li>
+								<p>10 успешно<br>выполненных<br>проектов</p>
+							</li>
+							<li>
+								<p>4 года<br>в компании</p>
+							</li>
+						</ul>
+						<div class="b-desc">
+							<h3>«В 100% случаев можно подобрать<br>более оптимальное оборудование и не только<br>оптимизировать смету, но и срок поставки<br>сделать короче»</h3>
+							<p>Сергей последние 6 лет специализируется на архитектурном и спортивном освещении. По его проектам было освещено свыше 1 миллиона квадратных метров фасадов зданий. Сергей держит в голове сроки изготовления светильников на 56 фабриках и знает 100% ассортимента каждой из них. За 6 лет благодаря подбору аналогичного оборудования в сумме ему удалось сэкономить более 14 миллионов рублей для его клиентов.</p>
+							<p>Ранее работал в таких компаниях как Philips и Эко-свет, с марта 2015 года работает в компании 500lux. С удовольствием ответит на любой технический вопрос.</p>
+						</div>
+						<div class="b-butt-cont">
+							<a href="#" class="b-green-butt">получить консультацию у сергея</a>
+						</div>
+					</div>
+					<div class="b-slide">
+						<div class="b-image-cont">
+							<div class="b-image" style="background-image: url('i/b-6/man.png');"></div>
+							<h3>Сергей Максимов 2</h3>
+							<h5>Генеральный директор</h5>
+						</div>
+						<ul class="b-skill clearfix">
+							<li>
+								<p>10 лет<br>стажа</p>
+							</li>
+							<li>
+								<p>10 успешно<br>выполненных<br>проектов</p>
+							</li>
+							<li>
+								<p>4 года<br>в компании</p>
+							</li>
+						</ul>
+						<div class="b-desc">
+							<h3>«В 100% случаев можно подобрать<br>более оптимальное оборудование и не только<br>оптимизировать смету, но и срок поставки<br>сделать короче»</h3>
+							<p>Сергей последние 6 лет специализируется на архитектурном и спортивном освещении. По его проектам было освещено свыше 1 миллиона квадратных метров фасадов зданий. Сергей держит в голове сроки изготовления светильников на 56 фабриках и знает 100% ассортимента каждой из них. За 6 лет благодаря подбору аналогичного оборудования в сумме ему удалось сэкономить более 14 миллионов рублей для его клиентов.</p>
+							<p>Ранее работал в таких компаниях как Philips и Эко-свет, с марта 2015 года работает в компании 500lux. С удовольствием ответит на любой технический вопрос.</p>
+						</div>
+						<div class="b-butt-cont">
+							<a href="#" class="b-green-butt">получить консультацию у сергея</a>
+						</div>
+					</div>
+					<div class="b-slide">
+						<div class="b-image-cont">
+							<div class="b-image" style="background-image: url('i/b-6/man.png');"></div>
+							<h3>Сергей Максимов 3</h3>
 							<h5>Генеральный директор</h5>
 						</div>
 						<ul class="b-skill clearfix">
@@ -456,17 +522,104 @@
 	</div>
 	<div class="b b-7">
 		<div class="b-block">
-			
+			<h2 class="b-title">Даем гарантии, которые не могут<br>себе позволить 95% компаний</h2>
+			<h4 class="b-subtitle">Юридически отвечаем перед вами за качество всей нашей работы</h4>
+			<div class="clearfix b-gar">
+				<div class="left">
+					<div><span>10</span></div>
+					<p>От 10 лет расширенная<br>гарантия на каждый<br>светильник</p>
+				</div>
+				<div class="right">
+					<div><span>Гарантия<br>сроков</span></div>
+					<p>Юридическая гарантия сроков<br>Мы вернем вам 0,1% от суммы<br>заказа за каждый день просрочки<br>поставки</p>
+				</div>
+			</div>
+			<div class="b-line"></div>
+			<div class="b-gars clearfix">
+				<li>
+					<div><img src="i/b-7/1.png" alt=""></div>
+					<h3>Гарантия<br>фиксированной сметы</h3>
+					<p>Все непредусмотренные<br>расходы компенсируем за<br>свой счет.</p>
+				</li>
+				<li>
+					<div><img src="i/b-7/2.png" alt=""></div>
+					<h3>Дополнительные светильники в той<br>же температуре (бинирование)</h3>
+					<p>Бинирование позволяет получить партию<br>светодиодов со 100% попаданием<br>в предыдущую световую температуру.</p>
+					<a href="#" class="b-white-link">Подробнее</a>
+				</li>
+				<li>
+					<div><img src="i/b-7/3.png" alt=""></div>
+					<h3>Гарантия<br>освещенности в люксах</h3>
+					<p>Если световая температура<br>не совпадает со сметой,<br>возвращаем деньги.</p>
+				</li>
+			</div>
+			<a href="#" class="b-green-butt">Скачать пример договора<br><span>pdf, 2.5 мб.</span></a>
 		</div>
 	</div>
 	<div class="b b-8">
-		<div class="b-block">
-			
+		<div class="b-block clearfix">
+			<div class="b-book"></div>
+			<a href="#" class="b-green-butt b-circle-butt">Посмотреть<br>содержание</a>
+			<div class="left">
+				<h2>Получите коммерческое<br>предложение и узнайте,<br>как сократить смету на 35%</h2>
+			</div>
+		</div>
+		<div class="right">
+			<h3>Оставьте заявку</h3>
+			<h4>на разработку коммерческого<br>предложения</h4>
+			<form action="kitsend.php" method="POST">
+				<div class="b-popup-form">
+					<label for="name">Введите Ваше имя</label>
+					<input type="text" id="name" name="name" required placeholder="Иван Иванов">
+					<label for="email">Введите Ваш E-mail</label>
+					<input type="text" id="email" name="email" required placeholder="mail@mail.ru">
+					<label for="tel">Телефон для уточнения деталей</label>
+					<input type="text" id="tel" name="phone" required placeholder="+7 (___) ___-__-__">
+					<input type="hidden" name="subject" value="Консультация">
+					<input type="submit" class="ajax b-green-butt" value="Получить предложение">
+				</div>
+			</form>
 		</div>
 	</div>
 	<div class="b b-9">
 		<div class="b-block">
-			
+			<h2 class="b-title">Ответим на любой ваш вопрос</h2>
+			<div class="clearfix">
+				<div class="left">
+					<h3>Звонок по России бесплатный</h3>
+					<h4>8 800 134-13-13</h4>
+					<h3>или</h3>
+					<h5>+7 990 777-52-52</h5>
+					<a href="#" class="b-green-butt">Закажите звонок</a>
+				</div>
+				<div class="right">
+					<h3>Наш офис находится по адресу</h3>
+					<h4>г. Москва, Б. Дмитровская, 11/2<br>м. Чеховская</h4>
+					<a href="#" class="b-white-butt">Смотреть на карте</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="b b-footer">
+		<div class="b-block clearfix">
+			<div class="left b-logo-cont">
+				<img src="i/logo.png" alt="">
+				<p>© 2015</p>
+				<p>Архитектурное освещение<br>сложных проектов.</p>
+			</div>
+			<div class="left b-contact-cont">
+				<h3>8 800 134-13-13</h3>
+				<a href="mailto:info@500lux.ru">info@500lux.ru</a>
+				<div class="b-bottom-links">
+					<a href="#">Реквизиты</a>
+					<a href="#">Политика конфиденциальности</a>
+				</div>
+			</div>
+			<div class="left b-dev-cont">
+				<p>Текст и структура — <a href="#" target="_blank">Киселев</a> и <a href="#" target="_blank">Сургай</a></p>
+				<p>Дизайн сайта — <a href="#" target="_blank">Conversion<b>Art</b></a></p>
+				<p>Верстка — <a href="#" target="_blank">LineUp</a></p>
+			</div>
 		</div>
 	</div>
 <div style="display:none;">

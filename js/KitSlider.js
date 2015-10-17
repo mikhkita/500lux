@@ -1,77 +1,43 @@
 $(document).ready(function(){
 
-	var items = [],
-		count = $(".b-comp").length,
-		nowItem = 0,
-		blocked = false,
-		mainInt,
-		autoPlay = false;
+	var $items = [],
+		count = $(".b-way").length,
+		nowItem = 1;
 
-	$(".b-comp").each(function(){
-		items.push($(this));
+	$(".b-way").each(function(){
+		$items.push($(this));
 	});
 
-	$(".b-get-more").click(function(){
-		clearInterval(mainInt);
+	$(".b-way-nav-left").click(function(){
+		goTo( ( nowItem > 0 )?(nowItem-1):(count-1), -1 );
 	});
 
-	$(".b-nav-left").click(function(){
-		var next = ( nowItem - 1 >= 0 )?(nowItem-1):(count-1);
-		goTo(next);
-		clearInterval(mainInt);
+	$(".b-way-nav-right").click(function(){
+		goTo( ( nowItem < count-1 )?(nowItem+1):0, 1 );
 	});
 
-	$(".b-nav-right").click(function(){
-		var next = ( nowItem + 1 < count )?(nowItem+1):0;
-		goTo(next);
-		clearInterval(mainInt);
+	$(".b-steps li").click(function(){
+		goTo($(this).index());
 	});
 
-	function goTo(next){
-		if( blocked ) return false;
-		blocked = true;
-		var nowDom = items[nowItem],
-			nextDom = items[next];
-		nowDom.fadeOut(1000);
-		$(".b-more").fadeOut(1000);
-		nextDom.find(".b-comp-cont").hide();
-		nextDom.find(".b-card").hide();
-		nextDom.css("z-index",11);
-		nextDom.fadeIn(1000);
-		nextDom.find(".b-comp-cont").delay(1100).fadeIn(500);
-		if( nextDom.find(".b-card").length ){
-			var tmp = 0;
-			nextDom.find(".b-card").each(function(){
-				$(this).delay(1500+tmp*300).fadeIn(500);
-				tmp++;
+	goTo(0);
+	
+	function goTo(to){
+		$(".b-steps li").eq(nowItem).removeClass("active");
+		$(".b-steps li").eq(to).addClass("active");
+		$items[nowItem].fadeOut(300);
+
+		nowItem = to;
+
+		setTimeout(function(){
+			TweenLite.to($(".b-5"), 0.3, { height : $items[to].attr("data-height"), ease : Quad.easeOut } );
+			TweenLite.to($items[nowItem].find(".step"), 0, { y : 30, opacity: 0, ease : Quad.easeOut } );
+			$items[nowItem].fadeIn(500);
+
+			$items[nowItem].find(".step").each(function(){
+				TweenLite.to($(this), 0.5, { y : 0, opacity: 1, delay: $(this).attr("data-delay")*1/1000,ease : Quad.easeOut } );
 			});
-			setTimeout(function(){
-				blocked = false;
-				nextDom.css("z-index",10);
-				nowItem = next;
-				$(".b-more").fadeIn(500);
-			},1500+tmp*300);
-		}else{
-			setTimeout(function(){
-				blocked = false;
-				nextDom.css("z-index",10);
-				nowItem = next;
-				$(".b-more").fadeIn(500);
-			},1100);
-		}
+		},300);
 	}
-
-	function whenScroll(){
-		var scroll = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-			if( !autoPlay && scroll > $(".b-5").offset().top - 150 ){
-				autoPlay = true;
-				mainInt = setInterval(function(){
-					var next = ( nowItem + 1 < count )?(nowItem+1):0;
-					goTo(next);
-				},5000);
-			}
-	}
-$(window).scroll(whenScroll);
-	whenScroll();
 
 });
