@@ -83,7 +83,7 @@ $(document).ready(function(){
 
     $(".b-left-thumbs li").click(function(){
         if($(this).hasClass('active')) return false;
-        var obj = $(this).closest(".b-case");
+        var obj = $(this).closest(".b-block");
         var prev = obj.find(".b-left-thumbs li.active").index();
         obj.find(".b-left-thumbs li").eq(prev).removeClass("active");
         $(this).addClass("active");
