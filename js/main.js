@@ -70,24 +70,52 @@ $(document).ready(function(){
 
     $( window ).load(function() {
         $(window).scroll(function() {
-            if($('body').scrollTop() >= $( ".b-case" ).offset().top && $('body').scrollTop() <= ($( ".b-5" ).offset().top-$( ".b-case .left" ).height())) {
-                $( ".b-case .left" ).addClass("fixed");
+            var height = $( ".b-case" ).offset().top+$( ".b-case" ).height()-$( ".b-case .left" ).height();
+            if($('body').scrollTop() >= ($( ".b-case" ).offset().top-10) && $('body').scrollTop() <= height) {
+                $( ".b-case .left" ).removeClass("abs").addClass("fixed");
+            } else if($('body').scrollTop() >= height){
+                $( ".b-case .left" ).removeClass("fixed").addClass("abs");
             } else {
-                $( ".b-case .left" ).removeClass("fixed"); 
+                $( ".b-case .left" ).removeClass("fixed abs");
             }
         });
     });
 
-    $(".b-case-thumbs li").click(function(){
+    $(".b-left-thumbs li").click(function(){
         if($(this).hasClass('active')) return false;
-        var prev = $(".b-case-thumbs li.active").index();
-        $(".b-case-thumbs li").eq(prev).removeClass("active");
+        var obj = $(this).closest(".b-case");
+        var prev = obj.find(".b-left-thumbs li.active").index();
+        obj.find(".b-left-thumbs li").eq(prev).removeClass("active");
         $(this).addClass("active");
-        $(".b-slide").eq(prev).hide();
-        $(".b-slide").eq($(this).index()).fadeIn();
+        obj.find(".b-slide").eq(prev).hide();
+        obj.find(".b-slide").eq($(this).index()).fadeIn();
+        $(".b-gallery:visible").slick('setPosition');
+    });
+     
+    $(".b-gallery").slick({
+        autoplay: true,
+        fade: true,
+        dots: true,
+        infinite: true,
+        prevArrow: "<span class='b-way-nav b-way-nav-left'></span>",
+        nextArrow: "<span class='b-way-nav b-way-nav-right'></span>"
     });
     
-    
+    var countpeople = $(".b-left-thumbs li").length-1;
+    $(".levo,.pravo").click(function() {
+        var obj = $(this).closest(".b-case");
+        var prev = obj.find(".b-left-thumbs li.active").index();
+        obj.find(".b-left-thumbs li").eq(prev).removeClass("active");
+        obj.find(".b-slide").eq(prev).hide();
+        if($(this).hasClass("levo")) {
+            prev = (prev == 0) ? countpeople : prev-1;          
+        }
+        if($(this).hasClass("pravo")) {
+            prev = (prev == countpeople) ? 0 : prev+1;           
+        }
+        obj.find(".b-left-thumbs li").eq(prev).addClass("active");
+        obj.find(".b-slide").eq(prev).fadeIn();
+    });
 	// var myPlace = new google.maps.LatLng(55.754407, 37.625151);
  //    var myOptions = {
  //        zoom: 16,
