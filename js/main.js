@@ -94,7 +94,6 @@ $(document).ready(function(){
      
     $(".b-gallery").slick({
         autoplay: true,
-        fade: true,
         dots: true,
         infinite: true,
         prevArrow: "<span class='b-way-nav b-way-nav-left'></span>",
