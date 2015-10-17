@@ -70,7 +70,7 @@ $(document).ready(function(){
 
     $( window ).load(function() {
         $(window).scroll(function() {
-            var height = $( ".b-case" ).offset().top+$( ".b-case" ).height()-$( ".b-case .left" ).height()+10;
+            var height = $( ".b-case" ).offset().top+$( ".b-case" ).height()-$( ".b-case .left" ).height()-10;
             if($('body').scrollTop() >= ($( ".b-case" ).offset().top-10) && $('body').scrollTop() <= height) {
                 $( ".b-case .left" ).removeClass("abs").addClass("fixed");
             } else if($('body').scrollTop() >= height){
