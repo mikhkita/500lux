@@ -8,6 +8,8 @@ $(document).ready(function(){
 		$items.push($(this));
 	});
 
+	$(".b-way").hide();
+
 	$(".b-way-nav-left").click(function(){
 		goTo( ( nowItem > 0 )?(nowItem-1):(count-1), -1 );
 	});
@@ -39,5 +41,10 @@ $(document).ready(function(){
 			});
 		},300);
 	}
+
+	var swipeh = new MobiSwipe("b-5");
+        swipeh.direction = swipeh.HORIZONTAL;
+    	swipeh.onswiperight = function() { $(".b-way-nav-left").click(); };
+    	swipeh.onswipeleft = function() { $(".b-way-nav-right").click(); };
 
 });
