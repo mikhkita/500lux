@@ -70,7 +70,7 @@ $(document).ready(function(){
 
     $( window ).load(function() {
         $(window).scroll(function() {
-            var height = $( ".b-case" ).offset().top+$( ".b-case" ).height()-$( ".b-case .left" ).height();
+            var height = $( ".b-case" ).offset().top+$( ".b-case" ).height()-$( ".b-case .left" ).height()-10;
             if($('body').scrollTop() >= ($( ".b-case" ).offset().top-10) && $('body').scrollTop() <= height) {
                 $( ".b-case .left" ).removeClass("abs").addClass("fixed");
             } else if($('body').scrollTop() >= height){
@@ -101,16 +101,16 @@ $(document).ready(function(){
         nextArrow: "<span class='b-way-nav b-way-nav-right'></span>"
     });
     
-    var countpeople = $(".b-left-thumbs li").length-1;
-    $(".levo,.pravo").click(function() {
-        var obj = $(this).closest(".b-case");
+    var countpeople = $(".b-staff .b-left-thumbs li").length-1;
+    $(".b-staff-nav").click(function() {
+        var obj = $(this).closest(".b-staff");
         var prev = obj.find(".b-left-thumbs li.active").index();
         obj.find(".b-left-thumbs li").eq(prev).removeClass("active");
         obj.find(".b-slide").eq(prev).hide();
-        if($(this).hasClass("levo")) {
+        if($(this).hasClass("b-left-butt")) {
             prev = (prev == 0) ? countpeople : prev-1;          
         }
-        if($(this).hasClass("pravo")) {
+        if($(this).hasClass("b-right-butt")) {
             prev = (prev == countpeople) ? 0 : prev+1;           
         }
         obj.find(".b-left-thumbs li").eq(prev).addClass("active");
