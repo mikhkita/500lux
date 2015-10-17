@@ -971,7 +971,7 @@ input:-moz-placeholder {
 		width: 100%;
 	}
 		.b-way{
-			display: none;
+			/*display: none;*/
 			position: absolute;
 			left: 0px;
 			top: 0px;
@@ -1409,6 +1409,7 @@ input:-moz-placeholder {
 	background-size: cover;
 	background-image: url('../i/back-7.jpg');
 	padding-bottom: 280px;
+	overflow: hidden;
 }
 	.b-7 .b-block{
 
