@@ -548,6 +548,7 @@ input:-moz-placeholder {
 				}
 				.b-case-thumbs{
 					display: inline-block;
+					background-color: #FFF;
 				}
 					.b-left-thumbs li:first-child{
 						border-top: 1px solid #e5e5e5;
