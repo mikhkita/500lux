@@ -512,6 +512,7 @@ input:-moz-placeholder {
 
 				}
 .b-4{
+	overflow: hidden;
 	color: #262626;
 	background-color: #FFF;
 }
@@ -1191,6 +1192,97 @@ input:-moz-placeholder {
 					.b-way-6 .b-text-cont p{
 
 					}
+.b-6{
+	background-color: #FFF;
+	color: #262626;
+}
+	.b-6 .b-block{
+
+	}
+		.b-6 h2.b-title{
+
+		}
+		.b-6 h4.b-subtitle{
+
+		}
+		.b-6 .b-staff{
+			margin-top: 70px;
+		}
+			.b-6 .b-staff>.left{
+
+			}
+				.b-staff-thumbs{
+					
+				}
+					.b-staff-thumbs li{
+						width: 250px;
+						padding-right: 10px;
+						padding-left: 76px;
+						box-sizing: border-box;
+					}
+						.b-staff-thumbs li div{
+							position: absolute;
+							left: 13px;
+							top: 18px;
+							width: 50px;
+							height: 50px;
+							border-radius: 50%;
+							background-position: 50% 50%;
+							background-repeat: no-repeat;
+						}
+						.b-staff-thumbs li h6{
+							font-family: "SeroPro-Bold";
+							font-size: 11px;
+							text-transform: uppercase;
+						}
+						.b-staff-thumbs li p{
+							font-size: 14px;
+							color: #7d7d7d;
+						}
+			.b-staff-slider{
+
+			}
+				.b-staff-slider .b-slide{
+
+				}
+					.b-6 .b-image-cont{
+
+					}
+						.b-6 .b-image-cont .b-image{
+
+						}
+						.b-6 .b-image-cont h3{
+
+						}
+						.b-6 .b-image-cont h5{
+
+						}
+					.b-6 .b-skill{
+
+					}
+						.b-6 .b-skill li{
+
+						}
+							.b-6 .b-skill li p{
+
+							}
+					.b-6 .b-desc{
+
+					}
+						.b-6 .b-desc h3{
+
+						}
+						.b-6 .b-desc p{
+
+						}
+					.b-6 .b-butt-cont{
+
+					}
+						.b-6 .b-green-butt{
+
+						}
+
+
 .top-menu {
 	margin-top: 170px;
 	width: 440px;
