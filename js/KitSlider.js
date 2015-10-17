@@ -37,7 +37,7 @@ $(document).ready(function(){
 			$items[nowItem].fadeIn(500);
 
 			$items[nowItem].find(".step").each(function(){
-				TweenLite.to($(this), 0.5, { y : 0, opacity: 1, delay: $(this).attr("data-delay")*1/1000,ease : Quad.easeOut } );
+				TweenLite.to($(this), ($(this).attr("data-duration"))?($(this).attr("data-duration")*1/1000):0.5, { y : 0, opacity: 1, delay: $(this).attr("data-delay")*1/1000,ease : Quad.easeOut } );
 			});
 		},300);
 	}
