@@ -2068,6 +2068,13 @@ input:-moz-placeholder {
 		width: 505px;
 		margin-top: 0;
 	}
+#b-popup-dogovor .b-popup{
+	padding: 93px 75px 115px;
+	background-image: url("../i/dogovor.jpg");
+}
+	#b-popup-dogovor .b-popup .commerse {
+		margin-top: 24px;
+	}
 #b-popup-2 .b-popup{
 	background-image: url("../i/popup-thank.jpg");
 	padding: 113px 0 64px;
@@ -2093,6 +2100,7 @@ input:-moz-placeholder {
 		margin-left: 102px;
 		margin-top: 45px;
 	}
+
 @media screen and (max-width: 1250px){
 	
 }

@@ -683,7 +683,7 @@
 					<p>Если световая температура<br>не совпадает со сметой,<br>возвращаем деньги.</p>
 				</li>
 			</div>
-			<a href="#" class="b-green-butt">Скачать пример договора<br><span>pdf, 2.5 мб.</span></a>
+			<a href="#" class="fancy b-green-butt" data-block="#b-popup-dogovor">Скачать пример договора<br><span>pdf, 2.5 мб.</span></a>
 		</div>
 	</div>
 	<div class="b b-8">
@@ -857,6 +857,23 @@
 							<input type="text" id="tel5" name="phone" required placeholder="+7 (___) ___-__-__">
 							<input type="hidden" name="subject" value="5 визуализаций">
 							<input type="submit" class="ajax b-green-butt" value="Получить 5 визуализаций">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="b-popup-dogovor">
+		<div class="for_all b-popup commerse-cont">
+			<h3>Скачайте пример договора в PDF</h3>
+			<div class="commerse clearfix">
+				<div class="right">
+					<form action="kitsend.php" method="POST" data-block="#b-popup-2">
+						<div class="b-popup-form">
+							<label for="email6">Введите Ваш E-mail</label>
+							<input type="text" id="email6" name="email" required placeholder="mail@mail.ru">
+							<input type="hidden" name="subject" value="Скачать пример договора">
+							<input type="submit" class="ajax b-green-butt" value="Скачать пример договора">
 						</div>
 					</form>
 				</div>
