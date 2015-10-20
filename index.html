@@ -46,10 +46,21 @@
 	<ul class="top-menu">
 		<li class="b-go" data-block=".b-3"><a href="#">О компании</a></li>
 		<li class="b-go" data-block=".b-4"><a href="#">Наши объекты</a></li>
-		<li class="b-go" data-block=".b-5"><a href="#">5 визуализаций бесплатно</a></li>
-		<li class="b-go" data-block=".b-6"><a href="#">Узкая специализация</a></li>
+		<li class="b-go" data-block=".b-5">
+			<a href="#">Этапы работы</a>
+			<ul class="sub-menu">
+				<li><a href="#">01<span>Сбор информации по 17 пунктам</span></a></li>
+				<li><a href="#">02<span>5 визуализаций бесплатно</span></a></li>
+				<li><a href="#">03<span>10 светильников на тест-драйв</span></a></li>
+				<li><a href="#">04<span>Поставка светильников с гарантией срока</span></a></li>
+				<li><a href="#">05<span>Монтаж своей бригадой</span></a></li>
+				<li><a href="#">06<span>Обслуживание</span></a></li>
+			</ul>
+		</li>
+		<li class="b-go" data-block=".b-6"><a href="#">Команда</a></li>
 		<li class="b-go" data-block=".b-7"><a href="#">Гарантия сроков</a></li>
 		<li class="b-go" data-block=".b-8"><a href="#">Оптимизируем смету на 35%</a></li>
+		<li class="b-go" data-block=".b-8"><a href="#">Контакты</a></li>
 	</ul>
 	<div class="b b-1">
 		<div class="b-block">
@@ -89,7 +100,7 @@
 	<div class="b b-2">
 		<div class="b-block clearfix">
 			<div class="left">
-				<a href="#" class="fancy b-comm-butt" data-block="#b-popup-commerse2">
+				<a href="#" class="fancy b-comm-butt" data-block="#b-popup-commerse">
 					<b>Получить коммерческое<br>предложение</b>
 					<span>pdf, 2.5 мб.</span>
 				</a>
@@ -893,9 +904,7 @@
 				<li><span>07.</span>Фотографии реализованных объектов с такими же светильниками</li>
 				<li><span>08.</span>Пилотный светотехнический расчет</li>
 			</ul>
-			<form action="kitsend.php" method="POST" data-block="#b-popup-2">
-				<input type="submit" class="ajax b-green-butt" value="Скачать пример предложения">
-			</form>
+			<input type="submit" class="ajax b-green-butt" onclick="$.fancybox($('#b-popup-commerse'),{padding:0}); return false;" value="Получить предложение">
 		</div>
 	</div>
 	<div id="b-popup-tz">
