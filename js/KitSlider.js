@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 	var $items = [],
 		count = $(".b-way").length,
-		nowItem = 1;
+		nowItem = 0;
 
 	$(".b-way").each(function(){
 		$items.push($(this));
@@ -19,10 +19,11 @@ $(document).ready(function(){
 	});
 
 	$(".b-steps li").click(function(){
-		goTo($(this).index());
+		if( $(this).index() != nowItem )
+			goTo($(this).index());
 	});
 
-	goTo(0);
+	goTo(1);
 	
 	function goTo(to){
 		$(".b-steps li").eq(nowItem).removeClass("active");

@@ -239,6 +239,7 @@ input:-moz-placeholder {
 				}
 			.b-1 .b-top .b-date-cont{
 				margin-top: 16px;
+				text-align: right;
 			}
 				.b-1 .b-top .b-date-cont p{
 					font-size: 14px;
@@ -248,9 +249,13 @@ input:-moz-placeholder {
 				}
 				.b-1 .b-top .b-date-cont h2{
 					font-size: 24px;
-					margin-top: 7px;
+					margin-top: 0px;
 					line-height: 18px;
 					font-family: "SeroPro-Bold";
+					margin-bottom: 3px;
+				}
+				.b-1 .b-top .b-date-cont h3{
+					
 				}
 		.b-1 .b-block h1{
 			margin-top: 100px;
@@ -1047,6 +1052,207 @@ input:-moz-placeholder {
 					.b-way-1 .b-text-cont a.b-white-link{
 						margin-top: 22px;
 					}
+		.b-way-2{
+			height: 1215px;
+		}
+			.b-way-2 .b-block{
+				width: 830px;
+				text-align: left;
+				padding-left: 10px;
+				height: 100%;
+			}
+				.b-way-2 .b-day{
+					background-position: 50% 50%;
+					background-repeat: no-repeat;
+					background-image: url('../i/b-5/2/day.jpg');
+					width: 2560px;
+					height: 1215px;
+					background-size: 2560px;
+					position: absolute;
+					left: -865px;
+					bottom: 0px;
+				}
+				.b-way-2 .b-houses{
+					background-position: 50% 50%;
+					background-repeat: no-repeat;
+					background-image: url('../i/b-5/2/houses.png');
+					width: 2560px;
+					height: 850px;
+					background-size: 2560px;
+					position: absolute;
+					left: -865px;
+					bottom: 0px;
+				}
+				.b-way-2 .b-text-cont{
+					position: absolute;
+					width: 100%;
+					left: 0px;
+					top: 490px;
+				}
+					.b-way-2 .b-text-cont .clearfix{
+
+					}
+						.b-way-2 .b-text-cont h3{
+							
+						}		
+						.b-way-2 .b-text-cont .right{
+							width: 430px;
+						}
+							.b-way-2 .b-text-cont .right h4{
+								margin-left: -40px;
+								font-size: 17px;
+								line-height: 24px;
+								margin-bottom: 15px;
+							}
+							.b-way-2.day .b-text-cont .right p{
+								color: #FFF;
+							}
+							.b-way-2 .b-text-cont .right p{
+								-webkit-transition: all 1000ms ease-out;
+								   -moz-transition: all 1000ms ease-out;
+								    -ms-transition: all 1000ms ease-out;
+								   	 -o-transition: all 1000ms ease-out;
+										transition: all 1000ms ease-out;
+								float: left;
+								width: 215px;
+								margin-bottom: 20px;
+							}
+								.b-way-2 .b-text-cont .right p span{
+
+								}
+				.b-way-2 .b-text-cont .b-green-butt{
+					margin-left: 0;
+					margin-top: 10px;
+					box-shadow: 0px 0px 0px 1px transparent;
+				}
+					.b-way-2.day .b-text-cont .b-green-butt{
+						background-color: transparent;
+						box-shadow: 0px 0px 0px 1px #FFF;
+					}
+					.b-way-2.transition .b-text-cont .b-green-butt{
+						-webkit-transition: all 1000ms ease-out;
+						   -moz-transition: all 1000ms ease-out;
+						    -ms-transition: all 1000ms ease-out;
+						   	 -o-transition: all 1000ms ease-out;
+								transition: all 1000ms ease-out;
+					}
+						.b-way-2.day .b-text-cont .b-green-butt:hover{
+							background-color: #FFF;
+							-webkit-transition: all 100ms ease-out;
+							   -moz-transition: all 100ms ease-out;
+							    -ms-transition: all 100ms ease-out;
+							   	 -o-transition: all 100ms ease-out;
+									transition: all 100ms ease-out;
+							color: #41cfc5;
+						}
+				.b-house{
+					position: relative;
+					margin-top: 40px;
+				}
+					.b-house li{
+						position: absolute;
+					}
+					.b-house li:nth-child(1){
+						left: -129px;
+						top: 0px;
+					}
+					.b-house li:nth-child(2){
+						left: -129px;
+						top: 0px;
+					}
+					.b-house li:nth-child(3){
+						left: -129px;
+						top: -5px;
+					}
+					.b-house li:nth-child(4){
+						left: -129px;
+						top: 0px;
+					}
+					.b-house li:nth-child(5){
+						left: -129px;
+						top: 0px;
+					}
+						.b-house li img{
+
+						}
+				.b-house-thumbs-cont{
+					position: absolute;
+					left: 50%;
+					top: 577px;
+					margin-left: -240px;
+					width: 480px;
+					box-sizing: border-box;
+					background-color: #FFF;
+					border-radius: 3px;
+					padding: 20px 20px 25px;
+					text-align: center;
+					z-index: 12;
+				}
+					.b-house-thumbs-cont h5{
+						font-size: 12px;
+						color: #707978;
+						line-height: 21px;
+						text-transform: uppercase;
+						margin-bottom: 15px;
+					}
+					.b-house-thumbs{
+						display: inline-block;
+					}
+						.b-house-thumbs li{
+							cursor: pointer;
+							float: left;
+						}
+							.b-house-thumbs li img{
+								display: block;
+								float: left;
+								margin-top: 3px;
+								margin-right: 12px;
+							}
+							.b-house-thumbs li span{
+								display: block;
+								float: left;
+								font-size: 12px;
+								color: #707978;
+								line-height: 21px;
+								margin-right: 13px;
+							}
+							.b-house-thumbs li div{
+								display: block;
+								float: left;
+								width: 20px;
+								height: 20px;
+								border: 1px solid #5a6362;
+								border-radius: 50px;
+								margin-right: 28px;
+								position: relative;
+							}	
+								.b-house-thumbs li:hover div:after{
+									opacity: 0.6;
+								}
+								.b-house-thumbs li.active div:after,
+								.b-house-thumbs li:hover div:after{
+									position: absolute;
+									content: "s";
+									font-size: 0px;
+									width: 10px;
+									height: 10px;
+									left: 50%;
+									top: 50%;
+									margin-left: -5px;
+									margin-top: -5px;
+									background-color: #41d0c6;
+									border-radius: 50px;
+								}
+								.b-house-thumbs li.active:hover div:after{
+									opacity: 1;
+									cursor: default;
+								}
+							.b-house-thumbs li:nth-child(4) div{
+								margin-right: 20px;
+							}
+							.b-house-thumbs li:last-child div{
+								margin-right: 0;
+							}
 		.b-way-3{
 			height: 909px;
 		}

@@ -2,6 +2,8 @@ $(document).ready(function(){
     $(window).stellar({
         positionProperty: 'transform'
     });
+
+    $(".b-way-2 .b-day").hide();
     
     function resize(){
        if( typeof( window.innerWidth ) == 'number' ) {
@@ -93,7 +95,7 @@ $(document).ready(function(){
     });
      
     $(".b-gallery").slick({
-        autoplay: true,
+        // autoplay: true,
         dots: true,
         infinite: true,
         prevArrow: "<span class='b-way-nav b-way-nav-left'></span>",
