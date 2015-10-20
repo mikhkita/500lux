@@ -1802,7 +1802,7 @@ input:-moz-placeholder {
 			line-height: 3.824;
 			letter-spacing: 1.7px;
 		}
-		.top-menu li:hover {
+		.top-menu > li > a:hover{
 			/*background-color: #41d0c6;*/
 			border-bottom: 1px solid #fff;
 		}
