@@ -2347,7 +2347,42 @@ input:-moz-placeholder {
 		margin-left: 102px;
 		margin-top: 45px;
 	}
+.b-thanks {
+	background-image: url("../i/back-thanks.jpg");
+	height: 856px;
+}
+	.b-thanks .thanks-cont {
+		width: 500px;
+		margin-top: 144px;
+		line-height: 1;
+		text-align: left;
+	}
+		.b-thanks .thanks-cont h2{
+			font-size: 51px;
+			font-weight: 700;
+		}
+		.b-thanks .thanks-cont p{
+			font-size: 16px;
+			margin-top: 30px;
+			line-height: 1.7;
+		}
+			.b-thanks .thanks-cont p span{
+				font-family: "SeroPro-Bold";
+				font-size: 20px;
+			}
+		.b-thanks .thanks-cont .sign-cont {
+			margin-top: 28px;
 
+		}	
+		.b-thanks .thanks-cont .sign-cont .left{
+			margin-right: 43px;
+		}
+		.b-thanks .thanks-cont .sign-cont .left h3 {
+			font-size: 14px;
+			margin-top: 6px;
+			line-height: 1.6;
+			margin-bottom: 12px;
+		}
 @media screen and (max-width: 1250px){
 	
 }

@@ -117,6 +117,10 @@ $(document).ready(function(){
         obj.find(".b-left-thumbs li").eq(prev).addClass("active");
         obj.find(".b-slide").eq(prev).fadeIn();
     });
+
+    if(window.location.hash != "" && window.location.hash != "#") {
+        $(".top-menu li[data-hash='"+window.location.hash+"']").click();
+    }
 	// var myPlace = new google.maps.LatLng(55.754407, 37.625151);
  //    var myOptions = {
  //        zoom: 16,
