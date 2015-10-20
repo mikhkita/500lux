@@ -2215,6 +2215,18 @@ input:-moz-placeholder {
 .commerse-cont input[type=text],.commerse-cont input[type=submit] {
 	width: 315px;
 }
+.commerse-cont h3{
+	position: relative;
+}
+.commerse-cont h3 span:before {
+	position: absolute;
+    content: "";
+    font-size: 0;
+    height: 3px;
+    top: 50px;
+    width: 161px;
+    background-color: red;
+}
 .popup-text {
 	padding: 93px 80px 55px 84px;
 }
