@@ -17,6 +17,11 @@ $(document).ready(function(){
             myWidth = document.body.clientWidth;
             myHeight = document.body.clientHeight;
         }
+        if(myHeight < 850){
+            $(".sub-menu").hide();
+        }else{
+            $(".sub-menu").show();
+        }
     }
     $(window).resize(resize);
     resize();
@@ -46,10 +51,20 @@ $(document).ready(function(){
       }
     }
     $.fn.placeholder();
+
+    customHandlers["staff"] = function(el){
+        $(".b-name").text(el.attr("data-name"));
+        $(".b-subject").val("Консультация - "+el.attr("data-name"));
+    };
     
     $(".b-burger-button").click(openMenu);
 
-    $(".menu-overlay, .top-menu li").click(closeMenu);
+    $(".menu-overlay, .top-menu li").on("click",closeMenu);
+
+    $(".b-click").on("click",function(){
+        $($(this).attr("data-click")).trigger("click",true);
+        closeMenu();
+    });
 
     function openMenu(){
         $(".menu-overlay").fadeIn(300);    
