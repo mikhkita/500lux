@@ -81,7 +81,7 @@ $(document).ready(function(){
 		});
 	});
 
-	$(".b-go").click(function(){
+	$(".b-go").on("click",function(){
 		var block = $( $(this).attr("data-block") ),
 			off = $(this).attr("data-offset")||0;
 		$("body, html").animate({

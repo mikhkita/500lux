@@ -18,14 +18,15 @@ $(document).ready(function(){
 		goTo( ( nowItem < count-1 )?(nowItem+1):0, 1 );
 	});
 
-	$(".b-steps li").click(function(){
+	$(".b-steps li").click(function(el,attr){
+		if( typeof attr == "undefined" ) attr = false;
 		if( $(this).index() != nowItem )
-			goTo($(this).index());
+			goTo($(this).index(),attr);
 	});
 
 	goTo(1);
 	
-	function goTo(to){
+	function goTo(to,delay){
 		$(".b-steps li").eq(nowItem).removeClass("active");
 		$(".b-steps li").eq(to).addClass("active");
 		$items[nowItem].fadeOut(300);
@@ -40,7 +41,7 @@ $(document).ready(function(){
 			$items[nowItem].find(".step").each(function(){
 				TweenLite.to($(this), ($(this).attr("data-duration"))?($(this).attr("data-duration")*1/1000):0.5, { y : 0, opacity: 1, delay: $(this).attr("data-delay")*1/1000,ease : Quad.easeOut } );
 			});
-		},300);
+		},300+((delay)?500:0));
 	}
 
 	var swipeh = new MobiSwipe("b-5");
