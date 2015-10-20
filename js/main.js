@@ -79,7 +79,7 @@ $(document).ready(function(){
         $(".top-menu").removeClass("shown");
         $(".b-burger-button").removeClass("opened").unbind("click").bind("click",openMenu);
         $("html").css("overflow","auto");
-        return false;
+        if( !$(".thankyou").length ) return false;
     }
 
     $( window ).load(function() {
