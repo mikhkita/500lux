@@ -110,9 +110,10 @@ $(document).ready(function(){
 				success: function(msg){
 					var $form;
 					if( msg == "1" ){
-						$form = $thanks;
+						window.location.href = "thankyou.html";
+
 					}else{
-						$form = $("#b-popup-error");
+						alert("Оишбка отправки! Попробуйте позже");
 					}
 
 					if( $this.attr("data-afterAjax") && customHandlers[$this.attr("data-afterAjax")] ){
@@ -120,10 +121,6 @@ $(document).ready(function(){
 					}
 
 					$this.find("input[type=text],textarea").val("");
-					$.fancybox.open({
-						content : $form,
-						padding : 0
-					});	
 				}
 			});
   		}
