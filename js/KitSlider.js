@@ -25,15 +25,18 @@ $(document).ready(function(){
 	});
 
 	goTo(1);
+
+	var timer;
 	
 	function goTo(to,delay){
+		clearTimeout(timer);
 		$(".b-steps li").eq(nowItem).removeClass("active");
 		$(".b-steps li").eq(to).addClass("active");
 		$items[nowItem].fadeOut(300);
 
 		nowItem = to;
 
-		setTimeout(function(){
+		timer = setTimeout(function(){
 			TweenLite.to($(".b-5"), 0.3, { height : $items[to].attr("data-height"), ease : Quad.easeOut } );
 			TweenLite.to($items[nowItem].find(".step"), 0, { y : 30, opacity: 0, ease : Quad.easeOut } );
 			$items[nowItem].fadeIn(500);
@@ -48,5 +51,13 @@ $(document).ready(function(){
         swipeh.direction = swipeh.HORIZONTAL;
     	swipeh.onswiperight = function() { $(".b-way-nav-left").click(); };
     	swipeh.onswipeleft = function() { $(".b-way-nav-right").click(); };
+
+    $(document).keyup(function(e){
+    	if( e.keyCode == 37 ){
+    		$(".b-way-nav-left").click();
+    	}else if( e.keyCode == 39 ){
+    		$(".b-way-nav-right").click();
+    	}
+    });
 
 });

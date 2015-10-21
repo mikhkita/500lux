@@ -30,11 +30,12 @@ body {
 }
 body {
 	min-width: 1020px;
+	-webkit-text-size-adjust: none;
 	text-align: center;
 	font-family: 'SeroPro';
 	overflow-x: hidden;
 	color: #FFF;
-	background-color: #000;
+	background-color: #f9f9f9;
 }
 a{
 	text-decoration: none;
@@ -120,6 +121,7 @@ input:-moz-placeholder {
 .b-1{
 	height: 1035px;
 	background-position: 50% 50%;
+	overflow: hidden;
 	background-size: cover;
 	background-image: url('../i/back-1.jpg');
 }
@@ -151,7 +153,7 @@ input:-moz-placeholder {
 					margin-left: -490px;
 					top: 57px;
 					z-index: 999;
-					background-color: rgba(0, 0, 0, 0.69);
+					/*background-color: rgba(0, 0, 0, 0.69);*/
 				}
 					.b-1 .b-top .b-logo-cont .b-burger-button span{
 						width: 30px;
@@ -170,12 +172,6 @@ input:-moz-placeholder {
 					}
 						.b-1 .b-top .b-logo-cont .b-burger-button.opened span{
 							background-color: transparent;
-							left: 15px;
-							-webkit-transition: all 300ms ease-out;
-							   -moz-transition: all 300ms ease-out;
-							    -ms-transition: all 300ms ease-out;
-							   	 -o-transition: all 300ms ease-out;
-									transition: all 300ms ease-out;
 						}
 						.b-1 .b-top .b-logo-cont .b-burger-button span:after,
 						.b-1 .b-top .b-logo-cont .b-burger-button span:before{
@@ -250,6 +246,7 @@ input:-moz-placeholder {
 			.b-1 .b-top .b-date-cont{
 				margin-top: 16px;
 				text-align: right;
+				max-width: 220px;
 			}
 				.b-1 .b-top .b-date-cont p{
 					font-size: 14px;
@@ -268,7 +265,7 @@ input:-moz-placeholder {
 					
 				}
 		.b-1 .b-block h1{
-			margin-top: 100px;
+			margin-top: 30px;
 			text-align: left;
 			font-size: 50px;
 			line-height: 50px;
@@ -431,6 +428,8 @@ input:-moz-placeholder {
 .b-3{
 	background-color: #031823;
 	background-image: url('../i/stars.png');
+	overflow: hidden;
+	background-position-x: 0px !important;
 }
 	.b-3 .b-block{
 
@@ -440,11 +439,13 @@ input:-moz-placeholder {
 			font-size: 42px;
 			line-height: 47px;
 			font-family: "SeroPro-Bold";
+			max-height: 10000px;
 		}
 		.b-3 h2.b-title{
 
 		}
 		h4.b-subtitle{
+			max-height: 10000px;
 			font-size: 21px;
 			margin-top: 28px;
 		}
@@ -701,6 +702,7 @@ input:-moz-placeholder {
 								margin-bottom: 45px;
 							}
 								.b-4 .b-slide .b-task h5{
+									max-height: 10000px;
 									font-size: 13px;
 									font-family: "SeroPro-Bold";
 									text-transform: uppercase;
@@ -709,11 +711,13 @@ input:-moz-placeholder {
 									top: 2px;
 								}
 								.b-4 .b-slide .b-task h6{
+									max-height: 10000px;
 									font-size: 18px;
 									font-family: "SeroPro-Bold";
 									margin-bottom: 23px;
 								}
 								.b-4 .b-slide .b-task p{
+									max-height: 10000px;
 									font-size: 16px;
 									line-height: 24px;
 									padding-right: 20px;
@@ -798,6 +802,8 @@ input:-moz-placeholder {
 	background-image: url('../i/stars.png');
 	background-color: #031724;
 	height: 909px;
+	overflow: hidden;
+    background-position-x: 0px !important;
 }
 	.b-5 .b-top-block{
 		z-index: 100;
@@ -1472,11 +1478,13 @@ input:-moz-placeholder {
 							background-size: cover;
 						}
 						.b-staff-thumbs li h6{
+							max-height: 10000px;
 							font-family: "SeroPro-Bold";
 							font-size: 11px;
 							text-transform: uppercase;
 						}
 						.b-staff-thumbs li p{
+							max-height: 10000px;
 							font-size: 14px;
 							margin-bottom: 2px;
 							color: #7d7d7d;
@@ -1578,6 +1586,7 @@ input:-moz-placeholder {
 							width: 33.33333%;
 						}
 							.b-6 .b-skill li p{
+								max-height: 10000px;
 								line-height: 24px;
 								font-size: 13px;
 								font-family: "SeroPro-Bold";
@@ -1588,11 +1597,13 @@ input:-moz-placeholder {
 						padding-top: 50px;
 					}
 						.b-6 .b-desc h3{
+							max-height: 10000px;
 							font-size: 21px;
 							line-height: 28px;
 							margin-bottom: 40px;
 						}
 						.b-6 .b-desc p{
+							max-height: 10000px;
 							width: 540px;
 							display: inline-block;
 							font-size: 15px;
@@ -1991,6 +2002,9 @@ input:-moz-placeholder {
 	-o-transition: all 300ms ease-out;
 	transition: all 300ms ease-out;
 }
+.top-menu.small{
+
+margin-top: 80px;}
 	.top-menu.shown{
 		visibility: visible;
 		-webkit-transform: translateY(30px);
@@ -2010,6 +2024,9 @@ input:-moz-placeholder {
 		text-align: left;
 		cursor: pointer;
 	}
+	.top-menu.small li{
+
+	}
 	.top-menu li:last-child {
 		border-bottom: none;
 	}
@@ -2021,6 +2038,9 @@ input:-moz-placeholder {
 			line-height: 3.824;
 			letter-spacing: 1.7px;
 		}
+		.top-menu.small li a{
+
+		font-size: 13px;line-height: 3;}
 		.top-menu > li:hover > a{
 			/*background-color: #41d0c6;*/
 			border-bottom: 1px solid #fff;
@@ -2029,9 +2049,15 @@ input:-moz-placeholder {
 	margin-left: 20px;
 	margin-bottom: 12px;
 }
+.top-menu.small .sub-menu{
+
+}
 	.sub-menu li {		
 		border-bottom: none;
 		cursor: pointer;
+	}
+	.top-menu.small sub-menu li{
+
 	}
 		.sub-menu li a {
 			line-height: 2.99;
@@ -2039,12 +2065,18 @@ input:-moz-placeholder {
 			font-family: "SeroPro";
 			color: #acc7d9;
 		}
+		.top-menu.small .sub-menu li a{
+
+		font-size: 12px;line-height: 2.5;}
 		.sub-menu li a span {
 			margin-left: 25px;
 			letter-spacing: 1.1px;
 			line-height: 1.3;
 			display: inline-block;
 			border-bottom: 1px solid #21272b;
+		}
+		.top-menu.small .sub-menu li a span{
+			
 		}
 		.sub-menu li:hover {
 			border-bottom: none;

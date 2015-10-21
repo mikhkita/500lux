@@ -18,9 +18,9 @@ $(document).ready(function(){
             myHeight = document.body.clientHeight;
         }
         if(myHeight < 850){
-            $(".sub-menu").hide();
+            $(".top-menu").addClass("small");
         }else{
-            $(".sub-menu").show();
+            $(".top-menu").removeClass("small");
         }
     }
     $(window).resize(resize);
@@ -113,6 +113,9 @@ $(document).ready(function(){
         obj.find(".b-slide").eq(prev).hide();
         obj.find(".b-slide").eq($(this).index()).fadeIn();
         $(".b-gallery:visible").slick('setPosition');
+        $("body, html").animate({
+            scrollTop : obj.find(".b-slider").offset().top-10
+        },800);
     });
      
     $(".b-gallery").slick({
