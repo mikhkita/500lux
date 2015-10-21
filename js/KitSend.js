@@ -46,8 +46,7 @@ $(document).ready(function(){
 			fitToView: false,
 			helpers: {
 	         	overlay: {
-	            	locked: true,
-	            	showEarly : true
+	            	locked: true
 
 	         	}
 	      	},
