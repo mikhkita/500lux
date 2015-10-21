@@ -864,7 +864,7 @@
 				<li><span>07.</span>Фотографии реализованных объектов с такими же светильниками</li>
 				<li><span>08.</span>Пилотный светотехнический расчет</li>
 			</ul>
-			<input type="submit" class="ajax b-green-butt" onclick="$.fancybox($('#b-popup-commerse'),{padding:0}); return false;" value="Получить предложение">
+			<input type="submit" class="ajax b-green-butt" onclick="$.fancybox($('#b-popup-commerse'),{afterShow:function(){setTimeout(function(){$('.fancybox-wrap').css('position','absolute');$('.fancybox-inner').css('height','auto');},100);},padding:0,helpers: {overlay: { showEarly : false, locked: true}}}); $('html').addClass('fancybox-margin').addClass('fancybox-lock'); $('.fancybox-overlay').html($('.fancybox-wrap')); return false;" value="Получить предложение">
 		</div>
 	</div>
 	<div id="b-popup-tz">
