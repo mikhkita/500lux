@@ -22,6 +22,11 @@ $(document).ready(function(){
         }else{
             $(".top-menu").removeClass("small");
         }
+
+        $(".b-map-canvas").css({
+            "height" : myHeight-150,
+            "width" : myWidth-150
+        });
     }
     $(window).resize(resize);
     resize();
@@ -145,22 +150,32 @@ $(document).ready(function(){
     if(window.location.hash != "" && window.location.hash != "#") {
         $(".top-menu li[data-hash='"+window.location.hash+"']").click();
     }
-	// var myPlace = new google.maps.LatLng(55.754407, 37.625151);
- //    var myOptions = {
- //        zoom: 16,
- //        center: myPlace,
- //        mapTypeId: google.maps.MapTypeId.ROADMAP,
- //        disableDefaultUI: true,
- //        scrollwheel: false,
- //        zoomControl: true
- //    }
- //    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions); 
+    customHandlers["map"] = function(el){
+        var myPlace = new google.maps.LatLng(55.804334, 37.585971);
+        var myOptions = {
+            zoom: 17,
+            center: myPlace,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            disableDefaultUI: true,
+            scrollwheel: false,
+            zoomControl: true
+        }
+        var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions); 
 
- //    var marker = new google.maps.Marker({
-	//     position: myPlace,
-	//     map: map,
-	//     title: "Ярмарка вакансий и стажировок"
-	// });
+        var marker = new google.maps.Marker({
+            position: myPlace,
+            map: map,
+            title: "Офис 500lux"
+        });
+    }
+
+    $(".b-watch-content").click(function(){
+        return fancyOpen($('#b-popup-commerse-ex'));
+    });
+
+    $(".b-watch-comm").click(function(){
+        return fancyOpen($('#b-popup-commerse'));
+    });
 
     //  var options = {
     //     $AutoPlay: true,                                

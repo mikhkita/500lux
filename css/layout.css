@@ -149,6 +149,7 @@ input:-moz-placeholder {
 					height: 50px;
 					position: fixed;
 					border-radius: 50%;
+					cursor: pointer;
 					left: 50%;
 					margin-left: -490px;
 					top: 57px;
@@ -160,6 +161,7 @@ input:-moz-placeholder {
 						top: 10px;
 						left: 10px;
 						height: 2px;
+						cursor: pointer;
 						opacity: 0.7;
 						-webkit-transition: all 100ms ease-out;
 						   -moz-transition: all 100ms ease-out;
@@ -2429,6 +2431,13 @@ margin-top: 80px;}
 			line-height: 1.6;
 			margin-bottom: 12px;
 		}
+.b-map-canvas{
+	width: 1000px;
+	height: 500px;
+}
+.fancybox-skin{
+	background-color: transparent;
+}
 @media screen and (max-width: 1250px){
 	
 }
