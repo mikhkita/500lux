@@ -176,7 +176,26 @@ $(document).ready(function(){
     $(".b-watch-comm").click(function(){
         return fancyOpen($('#b-popup-commerse'));
     });
+    var step = 0;
+    $(".b-steps li").mouseenter(function(){
+        $(this).addClass("hover");
+    });
 
+    $(".b-steps li").mouseleave(function(){
+        $(this).removeClass("hover");
+    });
+    setInterval(function() {
+        if(step < 6) { 
+            if(step == 0) $(".b-steps li").eq(5).mouseleave(); else $(".b-steps li").eq(step-1).mouseleave();
+            $(".b-steps li").eq(step).mouseenter();
+            step++;
+        } else step = 0;
+    }, 2000);
+    
+    $(".dev-link").click(function(){
+        $(".b-footer .b-dev-cont").fadeToggle()
+        return false;
+    });
     //  var options = {
     //     $AutoPlay: true,                                
     //     $SlideDuration: 500,                            

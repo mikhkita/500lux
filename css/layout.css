@@ -575,7 +575,7 @@ input:-moz-placeholder {
 						border-left: 1px solid #e5e5e5;
 						border-right: 1px solid #e5e5e5;
 						border-bottom: 1px solid #e5e5e5;
-						padding: 25px 15px 25px 55px;
+						padding: 36px 15px 14px 55px;
 						width: 150px;
 						position: relative;
 						text-align: left;
@@ -611,7 +611,7 @@ input:-moz-placeholder {
 						.b-left-thumbs li h5{
 							position: absolute;
 							left: 20px;
-							top: 24px;
+							top: 35px;
 							font-size: 16px;
 							font-family: "SeroPro-Bold";
 						}
@@ -843,7 +843,7 @@ input:-moz-placeholder {
 						transition: all 150ms ease-out;
 			}
 				.b-5 .b-steps li.active,
-				.b-5 .b-steps li:hover{
+				.b-5 .b-steps li.hover{
 					opacity: 1;
 				}
 				.b-5 .b-steps li.active{
@@ -883,7 +883,7 @@ input:-moz-placeholder {
 					position: relative;
 				}
 					.b-5 .b-steps li.active div,
-					.b-5 .b-steps li:hover div{
+					.b-5 .b-steps li.hover div{
 						/*box-shadow: inset 0 0 0 1px rgba(255,255,255,1);*/
 					}
 					.b-5 .b-steps li div:before{
@@ -902,7 +902,7 @@ input:-moz-placeholder {
 						   	 -o-transition: all 150ms ease-out;
 								transition: all 150ms ease-out;
 					}
-					.b-5 .b-steps li:hover div:before{
+					.b-5 .b-steps li.hover div:before{
 						background-color: #FFF;
 					}
 					.b-5 .b-steps li.active div:before{
@@ -928,7 +928,7 @@ input:-moz-placeholder {
 						width: 48px;
 					}
 						.b-5 .b-steps li.active div span,
-						.b-5 .b-steps li:hover div span{
+						.b-5 .b-steps li.hover div span{
 							color: #031823;
 						}
 				.b-5 .b-steps li p{
@@ -1663,8 +1663,16 @@ input:-moz-placeholder {
 				}
 					.b-7 .b-gar div div span{
 						font-size: 94px;
-						line-height: 180px;
+						line-height: 165px;
 						font-family: "SeroPro-Bold";
+					}
+					.b-7 .b-gar .years:after {
+						position: absolute;
+						content: "лет";
+						top: 173px;
+						left: 70px;
+						font-size: 22px;
+						line-height: 22px;
 					}
 				.b-7 .b-gar div p{
 					margin-top: 25px;
@@ -1723,6 +1731,7 @@ input:-moz-placeholder {
 							margin-top: 5px;
 						}
 					.b-7 .b-gars li h3{
+						font-family: "SeroPro-Bold";
 						font-size: 13px;
 						line-height: 24px;
 						margin-bottom: 15px;
@@ -1936,7 +1945,7 @@ input:-moz-placeholder {
 				font-size: 30px;
 				line-height: 42px;
 			}
-			.b-footer a{
+			.b-footer a,.b-footer .b-block .dev-link{
 				font-size: 15px;
 				line-height: 15px;
 				display: inline-block;
@@ -1944,10 +1953,10 @@ input:-moz-placeholder {
 				position: relative;
 				color: #262626;
 			}
-			.b-footer .b-contact-cont a{
+			.b-footer .b-contact-cont a,.b-footer .b-block .dev-link{
 				color: #41CFC5;
 			}
-				.b-footer a:after{
+				.b-footer a:after,.b-footer .b-block .dev-link:after{
 					position: absolute;
 					content: "s";
 					font-size: 0px;
@@ -1961,10 +1970,10 @@ input:-moz-placeholder {
 					   	 -o-transition: all 100ms ease-out;
 							transition: all 100ms ease-out;
 				}
-				.b-footer .b-contact-cont a:after{
+				.b-footer .b-contact-cont a:after,.b-footer .b-block .dev-link:after{
 					border-bottom: 1px solid #41CFC5;
 				}
-				.b-footer a:hover:after{
+				.b-footer a:hover:after,.b-footer .b-block .dev-link:hover:after{
 					bottom: 5px;
 					border-bottom-style: dashed !important;
 				}
@@ -1974,8 +1983,16 @@ input:-moz-placeholder {
 				.b-footer .b-contact-cont .b-bottom-links a{
 					margin-right: 20px;
 				}
+		
 		.b-footer .b-dev-cont{
-			
+			display: none;
+			position: absolute;
+		    right: 0;
+		    top: -80px;
+		    background-color: #fff;
+		    padding: 15px 15px 10px;
+		    border: 1px solid #e5e7e8;
+		    border-radius: 3px;
 		}
 			.b-footer .b-dev-cont p{
 				margin-bottom: 5px;
@@ -2277,6 +2294,7 @@ margin-top: 80px;}
 }
 .popup-text {
 	padding: 93px 80px 55px 84px;
+	background-color: #fff;
 }
 	.popup-text h3,.popup-text p {
 		color: #262626;

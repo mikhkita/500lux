@@ -17,7 +17,7 @@ $(document).ready(function(){
 	$(".b-way-nav-right").click(function(){
 		goTo( ( nowItem < count-1 )?(nowItem+1):0, 1 );
 	});
-
+	
 	$(".b-steps li").click(function(el,attr){
 		if( typeof attr == "undefined" ) attr = false;
 		if( $(this).index() != nowItem )
