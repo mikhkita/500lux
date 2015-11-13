@@ -34,7 +34,16 @@
 		foreach ($fields  as $key => $value){
 			$message .= "<div><p><b>".$key.": </b>".$value."</p></div>";
 		}
-			
+		$message .=  "<div><br><br>" .
+	        $_POST['ref_info'] .
+	        "<br><br>" .
+	        $_POST['lpm_ref_info'] .
+	        "<br><br>" .
+	        $_POST['lpm_city_info'] .
+	        "<br><br>" .
+
+	        '</div>';	
+
 		$message .= "</div>";
 		
 		if(send_mime_mail("Сайт ".$from,$email_from,$name,$email_admin,'UTF-8','UTF-8',$subject,$message,true)){	
